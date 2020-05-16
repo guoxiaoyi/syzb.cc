@@ -1,0 +1,15 @@
+zh-cn:
+  activemodel:
+  activerecord:
+    models:
+      wizcms_article/file: 文件附件
+    attributes:
+      wizcms_article/file:
+        title: 标题
+        author: 作者
+        article_category_id: 类别
+        published: 是否发布
+        content: 内容
+        brief: 简介
+        updated_at: 更新时间
+        created_at: 创建时间

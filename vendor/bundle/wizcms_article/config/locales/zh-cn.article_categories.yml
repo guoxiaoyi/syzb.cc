@@ -1,0 +1,15 @@
+zh-cn:
+  activemodel:
+  activerecord:
+    models:
+      wizcms_article/article_category: 文章类别
+    attributes:
+      wizcms_article/article_category:
+        name: 名称
+        customeize_order: 自定义排序
+        parent_id: 父类别
+        brief: 简介
+        published: 是否发布
+        cite_key: 引用 KEY
+
+

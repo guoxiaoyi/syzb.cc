@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h3>
+  <%= @article.title %>
+</h3>
+
+<p>
+  <strong><%= WizcmsArticle::Article.human_attribute_name(:author) %>:</strong>
+  <%= @article.author %>
+</p>
+
+<p>
+  <strong><%= WizcmsArticle::Article.human_attribute_name(:published) %>:</strong>
+  <%= @article.published %>
+</p>
+<p>
+  <strong><%= WizcmsArticle::Article.human_attribute_name(:article_category_id) %>:</strong>
+  <%= @article.article_category.try :name %>
+</p>
+<p>
+  <strong><%= WizcmsArticle::Article.human_attribute_name(:cite_key) %>:</strong>
+  <%= @article.cite_key %>
+</p>
+<hr />
+<div>
+  <%= @article.brief %>
+</div>
+<hr />
+<div>
+  <%= raw @article.content %>
+</div>
+<hr />
+<%= link_to t('buttons.edit'), edit_admin_article_path(@article), class: 'btn btn-default' %>
+<%= link_to t('buttons.back'), admin_articles_path, class: 'btn btn-default'  %>
+<%= link_to "Move to Page", to_page_admin_article_path(@article), class: 'btn btn-default', data: { confirm: '你确定吗?' }  %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= @page.title %></h3>
+<p>
+  <strong><%= WizcmsArticle::Page.human_attribute_name(:published) %>:</strong>
+  <%= @page.published %>
+</p>
+
+<p>
+  <strong><%= WizcmsArticle::Page.human_attribute_name(:cite_key) %>:</strong>
+  <%= @page.cite_key %>
+</p>
+
+<hr />
+<div><%= WizcmsArticle::Page.human_attribute_name(:content) %>:</div>
+<div>
+  <%= raw @page.content %>
+</div>
+<hr />
+
+
+<p>
+  <strong><%= WizcmsArticle::Page.human_attribute_name(:keywords) %>:</strong>
+  <%= @page.keywords %>
+</p>
+
+<p>
+  <strong><%= WizcmsArticle::Page.human_attribute_name(:brief) %>:</strong>
+  <%= @page.brief %>
+</p>
+
+<p>
+  <strong><%= WizcmsArticle::Page.human_attribute_name(:parent_id) %>:</strong>
+  <%= @page.parent_id %>
+  <% @page.children.each do |i| %>
+  <%= i.title%>
+  <% end -%>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_page_path(@page) %> |
+<%= link_to t('buttons.back'), admin_pages_path %>

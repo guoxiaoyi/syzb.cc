@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <%= image_tag @link.image, :title => @link.title, width: 500 %>
+</p>
+
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:title) %></strong>
+  <%= @link.title %>
+</p>
+
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:url) %></strong>
+  <%= @link.url %>
+</p>
+
+
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:published) %></strong>
+  <%= @link.published %>
+</p>
+
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:category_id) %></strong>
+  <%= @link.category.try(:name) %>
+</p>
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:custom_order) %></strong>
+  <%= @link.custom_order %>
+</p>
+<p>
+  <strong><%= WizcmsLink::Link.human_attribute_name(:cite_key) %></strong>
+  <%= @link.cite_key %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_link_path(@link), class: 'btn btn-default' %>
+<%= link_to t('buttons.back'), admin_links_path, class: 'btn btn-default' %>

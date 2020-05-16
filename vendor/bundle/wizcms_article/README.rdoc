@@ -1,0 +1,57 @@
+= WizcmsArticle
+
+This project rocks and uses MIT-LICENSE.
+
+Gemfile:
+
+  gem 'wizcms_article' , :git => 'git@git.wityun.com:wizcloud/wizcms_article.git'
+
+run:
+
+  rake wizcms_article:install:migrations
+
+  rake db:migrate
+
+
+route.rb
+
+  mount WizcmsArticle::Engine, :at => "/"
+
+Must have a route named as ‘admin_login_path’.
+
+Or create a file /app/decorators/controllers/wizcms_article/admin_application_decorator.rb
+
+    WizcmsArticle::Admin::ApplicationController.class_eval do
+
+      def current_manager
+        @current_manager ||= Manager.where(id: session[:manager_id]).first if session[:manager_id]
+      end
+
+      def auth_redirect
+        redirect_to main_app.admin_login_path unless current_manager
+      end
+
+
+    end
+
+
+WizCmsArticle will call an before_action auth_redirect to verified the auth of the article's admin.
+If current_manager is nil wizcms will redirect to 'admin_login_path'.
+
+
+## Update Log
+
+0.1.6
+
+增加文章类别直接获取本类别和子类别的文章。
+
+
+
+
+
+
+
+
+
+
+

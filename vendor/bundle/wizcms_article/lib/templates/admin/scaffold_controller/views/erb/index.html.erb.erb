@@ -1,0 +1,29 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+      <th><%%= <%= singular_table_name.classify %>.human_attribute_name(:<%= attribute.name %>) %></th>
+<% end -%>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
+      <tr>
+<% attributes.reject(&:password_digest?).each do |attribute| -%>
+        <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+<% end -%>
+        <td><%%= link_to t('actions.show'), <%= "[:#{prefix}, #{singular_table_name}]" %> %></td>
+        <td><%%= link_to t('actions.edit'), edit_<%= prefixed_plain_model_url %>_path(<%= singular_table_name %>) %></td>
+        <td><%%= link_to t('actions.destroy'), <%= "[:#{prefix}, #{singular_table_name}]" %>, method: :delete, data: { confirm: '你确定吗?' } %></td>
+      </tr>
+    <%% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%%= link_to "#{t('actions.new')}#{<%= singular_table_name.classify %>.model_name.human}", new_<%= prefixed_plain_model_url %>_path, class: 'btn btn-default' %>

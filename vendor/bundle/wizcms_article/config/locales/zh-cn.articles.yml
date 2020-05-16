@@ -1,0 +1,30 @@
+zh-cn:
+  activemodel:
+    attributes:
+      wizcms_article/article_search:
+        title: 标题
+        author: 作者
+        article_category_id: 类别
+        published: 是否发布
+        content: 内容
+        brief: 简介
+        updated_at: 更新时间
+        created_at: 创建时间
+  activerecord:
+    models:
+      wizcms_article/article: 文章
+    attributes:
+      wizcms_article/article: &article
+        title: 标题
+        author: 作者
+        article_category_id: 类别
+        published: 是否发布
+        hotspot: 推荐
+        published_at: 发布时间
+        content: 内容
+        brief: 简介
+        copy_from: 来源
+        customeize_order: 自定义排序
+        cite_key: 引用关键字
+        updated_at: 更新时间
+        created_at: 创建时间

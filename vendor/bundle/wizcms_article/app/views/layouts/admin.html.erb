@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WizcmsArticle</title>
+  <%= stylesheet_link_tag    "wizcms_article/application", media: "all" %>
+  <%= javascript_include_tag "kindeditor/kindeditor" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+
+  <%= javascript_include_tag "wizcms_article/application" %>
+</body>
+</html>
