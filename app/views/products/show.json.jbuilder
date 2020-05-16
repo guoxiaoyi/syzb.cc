@@ -1,0 +1,1 @@
+json.extract! @product, :name, :price, :detail, :online, :customize_order, :recommendation, :created_at, :updated_at, :stock

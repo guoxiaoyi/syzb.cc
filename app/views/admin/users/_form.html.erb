@@ -1,0 +1,43 @@
+<%= content_for :stylesheets do %>
+  <%= stylesheet_link_tag "admin/jquery.datetimepicker.min.css" -%>
+<% end %>
+
+<%= simple_form_for([:admin, @user]) do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :phone, disabled: true %>
+    <%= f.input :name, disabled: true %>
+    <%= f.input :number %>
+    <%= f.input :province, disabled: true %>
+    <%= f.input :city, disabled: true %>
+    <%= f.input :district, disabled: true %>
+    <%= f.input :manager_id, collection: Manager.all %>
+    <%= f.input :parent_phone, disabled: true %>
+    <%= f.input :birthday, as: :string %>
+    <%= f.input :balance, disabled: true %>
+    <%= f.input :levels, collection: Vip.all, include_blank: false %>
+    <%= f.input :expired_at, as: :string %>
+    <div class="ln_solid"></div>
+
+    <div class="item form-group">
+        <div class="col-md-6 col-sm-6 offset-md-3">
+            <%= link_to t('buttons.back'), admin_users_path, class: 'btn btn-secondary' %>
+            <%= f.button :submit, class: 'btn btn-success' %>
+        </div>
+    </div>
+<% end %>
+
+<%= content_for :javascript do %>
+    <%= javascript_include_tag 'admin/jquery.datetimepicker.full.min.js'%>
+    <script type="text/javascript">
+        jQuery.datetimepicker.setLocale('zh');
+        $('#user_birthday').datetimepicker({
+            value:'<%=  @user.birthday %>',
+            // theme:'dark',
+        });
+        $('#user_expired_at').datetimepicker({
+            value:'<%=  @user.expired_at %>',
+            // theme:'dark',
+        });
+    </script>
+<% end %>
+

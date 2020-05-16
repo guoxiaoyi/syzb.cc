@@ -1,0 +1,14 @@
+<% content_for :title , "#{@page.title}" -%>
+<header class="g-hd">
+  <%= link_to root_path, class: "btnfanhui-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+  <div class="btnMenu-page"><span class="ico sprite"></span></div>
+  <strong><%= @page.title %></strong>
+  <%= link_to serach_index_path, class: "btnSearch-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+</header>
+<section class="g-body">
+  <%= raw @page.mobile_content -%>
+</section>

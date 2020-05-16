@@ -1,0 +1,41 @@
+# == Schema Information
+#
+# Table name: work_sites
+#
+#  id           :integer          not null, primary key
+#  title        :string(50)
+#  mj           :string(10)
+#  fg_id        :integer
+#  designer_id  :integer
+#  address      :string(255)
+#  build_before :text
+#  building     :text
+#  build_after  :text
+#  picture      :string(255)
+#  state        :integer
+#  created_at   :datetime
+#  updated_at   :datetime
+#  jianli       :string(10)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  mj: MyString
+  fg_id: 1
+  designer_id: 1
+  address: MyString
+  build_before: MyText
+  building: MyText
+  build_after: MyText
+
+two:
+  title: MyString
+  mj: MyString
+  fg_id: 1
+  designer_id: 1
+  address: MyString
+  build_before: MyText
+  building: MyText
+  build_after: MyText

@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: activity_records
+#
+#  id          :integer          not null, primary key
+#  user_id     :integer
+#  activity_id :integer
+#  status      :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  activity_id: 1
+
+two:
+  user_id: 
+  activity_id: 1

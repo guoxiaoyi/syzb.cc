@@ -1,0 +1,73 @@
+<%= content_for :stylesheets do %>
+  <link href="/assets/gentelella/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+<% end %>
+
+<div class="x_panel">
+  <div class="x_title">
+    <h2>图书列表
+      <small>
+        <%= link_to "新增", new_admin_book_path, class: 'btn btn-info btn-sm' %>
+      </small>
+    </h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-hover table-bordered" id="datatable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th><%= Book.human_attribute_name(:categoryable_id) %></th>
+          <th><%= Book.human_attribute_name(:name) %></th>
+          <!-- <th><%= Book.human_attribute_name(:manager_id) %></th> -->
+          <!-- <th><%= Book.human_attribute_name(:detail) %></th> -->
+          <th><%= Book.human_attribute_name(:online) %></th>
+          <th><%= Book.human_attribute_name(:customeize_order) %></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @books.each_with_index do |book, index| %>
+          <tr>
+            <td> <%= index + 1%></td>
+            <td><%= book.categoryable.name %></td>
+            <td><%= book.name %></td>
+            <!-- <td><%= book.manager_id %></td> -->
+            <!-- <td><%#= book.detail %></td> -->
+            <td><%= book.online %></td>
+            <td><%= book.customeize_order %></td>
+            <td>
+              <%= link_to t('actions.show'), [:admin, book] %>
+              <%= link_to t('actions.edit'), edit_admin_book_path(book) %>
+              <%= link_to t('actions.destroy'), [:admin, book], method: :delete, data: { confirm: '你确定吗?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<%= content_for :javascript do %>
+  <script src="/assets/gentelella/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="/assets/gentelella/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="/assets/gentelella/jszip/dist/jszip.min.js"></script>
+  <script src="/assets/gentelella/pdfmake/build/pdfmake.min.js"></script>
+  <script src="/assets/gentelella/pdfmake/build/vfs_fonts.js"></script>
+<% end %>
+

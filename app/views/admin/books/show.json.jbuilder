@@ -1,0 +1,1 @@
+json.extract! @book, :name, :manager_id, :categoryable_id, :detail, :online, :customeize_order, :created_at, :updated_at

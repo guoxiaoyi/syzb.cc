@@ -1,0 +1,19 @@
+
+<div class="list-group">
+  <li class="list-group-item">
+    管理子菜单
+  </li>
+  
+  <% AdminMenu.get_submenu(controller_name).each do |m| %>
+    <%= link_to  send("admin_#{m.pluralize}_path"), class: "list-group-item #{m.current(controller_name) ? 'active' : ''}" do  %>
+      <%= m.human %>
+    <% end %>
+  <% end %>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">提示信息</div>
+  <div class="panel-body">
+    后台管理可以对网站的内容进行管理， 可以上传图片， 可视化编辑。
+  </div>
+</div>
+

@@ -1,0 +1,29 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th><%= ItemCategory.human_attribute_name(:name) %></th>
+      <th><%= ItemCategory.human_attribute_name(:cite_key) %></th>
+      <th><%= ItemCategory.human_attribute_name(:parent_id) %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @item_categories.each do |item_category| %>
+      <tr>
+        <td><%= item_category.name %></td>
+        <td><%= item_category.cite_key %></td>
+        <td><%= item_category.parent_id %></td>
+        <td><%= link_to t('actions.show'), [:admin, item_category] %></td>
+        <td><%= link_to t('actions.edit'), edit_admin_item_category_path(item_category) %></td>
+        <td><%= link_to t('actions.destroy'), [:admin, item_category], method: :delete, data: { confirm: '你确定吗?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "#{t('actions.new')}#{ItemCategory.model_name.human}", new_admin_item_category_path, class: 'btn btn-default' %>

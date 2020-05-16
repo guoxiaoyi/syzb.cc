@@ -1,0 +1,39 @@
+<div class="x_panel">
+  <div class="x_title">
+    <h2>捐赠管理</h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th><%= Donate.human_attribute_name(:user_id) %></th>
+          <th><%= Donate.human_attribute_name(:content) %></th>
+          <th>图片</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @donates.each do |donate| %>
+          <tr>
+            <td><%= donate.user.name %></td>
+            <td><%= donate.content %></td>
+            <td width="400">
+              <% donate.pictures.each do |picture| %>
+                <%= image_tag picture.url.url, width: 150 %>
+              <% end %>
+            </td>
+            <td>
+              <%#= link_to t('actions.show'), [:admin, donate] %>
+              <%#= link_to t('actions.edit'), edit_admin_donate_path(donate) %>
+              <%= link_to t('actions.destroy'), [:admin, donate], method: :delete, data: { confirm: '你确定吗?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%#= link_to "#{t('actions.new')}#{Donate.model_name.human}", new_admin_donate_path, class: 'btn btn-default' %>

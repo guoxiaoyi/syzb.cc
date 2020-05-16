@@ -1,0 +1,40 @@
+<div class="x_panel">
+  <div class="x_title">
+    <h2>会员等级
+      <small><%= link_to "#{t('actions.new')}", new_admin_vip_path, class: 'btn btn-info btn-sm' %></small>
+    </h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th><%= Vip.human_attribute_name(:name) %></th>
+          <th><%= Vip.human_attribute_name(:levels) %></th>
+          <th><%= Vip.human_attribute_name(:price) %></th>
+          <th><%= Vip.human_attribute_name(:parent_id) %></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @vips.each do |vip| %>
+          <tr>
+            <td><%= vip.name %></td>
+            <td><%= vip.levels %></td>
+            <td><%= vip.price %></td>
+            <td><%= vip.parent_id %></td>
+            <td>
+              <%= link_to t('actions.edit'), edit_admin_vip_path(vip) %>
+              <%= link_to t('actions.destroy'), [:admin, vip], method: :delete, data: { confirm: '你确定吗?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+
+  </div>
+</div>
+
+

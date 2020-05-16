@@ -1,0 +1,138 @@
+Rails.application.routes.draw do
+
+
+
+  defaults format: :json do
+    get 'share/index'
+    resources :users, only: [:show, :create, :update] do
+      put :update_info
+    end
+    resources :managers, only: [:index]
+    resources :activities, only: [:index, :show]
+    resources :activity_records
+    resources :books, only: [:index, :show] do
+      post :pick_up
+    end
+    resources :orders, only: [:create, :index]  do
+      post :callback
+    end
+    resources :vips, only: [:index]
+    resource :session
+    resources :nodes, only: [:index] do
+      resources :topics do
+        resources :replies
+      end
+    end
+    resources :products do
+      post :pick_up
+    end
+    resources :articles, only: [:show, :index]
+    get 'tabs/service'
+    get 'tabs/home'
+    get 'tabs/article'
+    resources :notes
+    resources :points_records, only: [:index]
+    resources :donates do
+      post :upload
+    end
+  end
+
+
+
+
+
+
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
+  root 'home#index'
+
+  # Example of regular route:
+  #   get 'products/:id' => 'catalog#view'
+
+  # Example of named route that can be invoked with purchase_url(id: product.id)
+  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+
+  # Example resource route (maps HTTP verbs to controller actions automatically):
+  #   resources :products
+
+  # Example resource route with options:
+  #   resources :products do
+  #     member do
+  #       get 'short'
+  #       post 'toggle'
+  #     end
+  #
+  #     collection do
+  #       get 'sold'
+  #     end
+  #   end
+
+  # Example resource route with sub-resources:
+  #   resources :products do
+  #     resources :comments, :sales
+  #     resource :seller
+  #   end
+
+  # Example resource route with more complex sub-resources:
+  #   resources :products do
+  #     resources :comments
+  #     resources :sales do
+  #       get 'recent', on: :collection
+  #     end
+  #   end
+
+  # Example resource route with concerns:
+  #   concern :toggleable do
+  #     post 'toggle'
+  #   end
+  #   resources :posts, concerns: :toggleable
+  #   resources :photos, concerns: :toggleable
+
+  # Example resource route within a namespace:
+  #   namespace :admin do
+  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # (app/controllers/admin/products_controller.rb)
+  #     resources :products
+  #   end
+
+  mount WizcmsArticle::Engine, :at => "/"
+  mount WizcmsLink::Engine, :at => "/"
+  namespace :admin do
+    get '/' => 'application#portal'
+
+    get '/login' => 'application#login'
+    post '/create_session' => 'application#create_session'
+    match '/destroy_session' => 'application#destroy_session', via: [:get,:post]
+
+
+    resources :managers
+    resources :users do
+      resources :points_records
+    end
+
+    resources :activity_categories
+    resources :activities
+
+    resources :product_categories
+    resources :products
+
+    resources :book_categories
+    resources :books
+
+    resources :book_orders
+    resources :product_orders
+
+    resources :item_categories
+    resources :pages
+    resources :nodes
+    resources :replies
+    resources :topics
+    resources :activity_records
+    resources :orders
+    resources :vips
+    resources :notes
+    resources :donates
+  end
+end

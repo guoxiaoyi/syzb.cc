@@ -1,0 +1,63 @@
+<% content_for :title ,'设计团队' -%>
+<header class="g-hd">
+  <%= link_to root_path, class: "btnfanhui-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+  <div class="btnMenu-page"><span class="ico sprite"></span></div>
+  <strong>预约设计师</strong>
+  <%= link_to serach_index_path, class: "btnSearch-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+</header>
+
+
+<section class="g-body Common">
+    <h1 class="yysjs-tit">目前已有<b class="color2"><%= DesignerContact.count + 50 %></b>位业主成功预约设计师</h1>
+    <%= form_for @designer_contact, url: designer_index_path, remote: true do |f|%>
+    <div class="formPublish">
+    <div class="inputItem f-box">
+        <%= f.text_field :name, class: "inputText f-flex", placeholder: "请填写您的姓名", data: {tipnull: "您的姓名"} %>
+    </div>
+    <div class="inputItem f-box">
+        <%= f.text_field :tel, class: "inputText f-flex", placeholder: "请填写您的电话", data: {tipnull: "您的电话"} %>
+    </div>
+    <div class="inputItem f-box">
+        <%= f.text_field :zone, class: "inputText f-flex", placeholder: "请填写小区名称", data: {tipnull: "小区名称"} %>
+    </div>
+    <div class="inputItem f-box">
+        <%= f.text_field :mj, class: "inputText f-flex", placeholder: "请填写房屋面积", data: {tipnull: "房屋面积"} %>
+        <!-- <input class="inputText f-flex" name="" placeholder="请填写房屋面积" data-tipnull="房屋面积"> -->
+    </div>
+    <div class="inputItem f-box">
+        <div class="wrap f-flex">
+            <div class="selectWrap">
+                <select name="" disabled>
+                    <option value=""><%= @designer.name %></option>
+                </select>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+    <%= f.hidden_field :designer_id, value: params[:id], class: "inputText text" %>
+    <!-- <div class="inputItem f-box"> -->
+        <%#= f.text_field :datetime, class: "inputText f-flex", placeholder: "请填写预约时间", data: {tipnull: "请填写预约时间"} %>
+        <!-- <input class="inputText f-flex" name="" placeholder="请填写预约时间" data-tipnull="请填写预约时间"> -->
+    <!-- </div> -->
+    <div class="btnsWrap f-box">
+    <input class="btn f-flex" type="submit" value="提交预约设计师">
+    </div>
+    </div>
+    <% end -%>
+
+    <div class="indexzhanting">
+    <h1 class="title" style="height: 25px;"><em style="letter-spacing:5px;">*为了您的权益，您的隐私将被严格保密*</em></h1>
+    </div><!--结束-->
+</section>
+
+
+
+
+
+
+
+

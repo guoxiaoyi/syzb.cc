@@ -1,0 +1,18 @@
+
+<h4><span><%= pannel_list.title %></span><%= link_to "更多", article_category_articles_path(pannel_list.identity) -%></h4>
+<% if !pannel_list.list.blank? %>
+ <ul>
+
+  <% pannel_list.list.each do |news| %>
+    <li>
+      <%= link_to article_path(news) do %>
+      <span class="pull-right"><%= news.published_at.to_s(:date) if news.published_at %></span>
+      <%= truncate_u(news.title)%>
+      <% end -%>
+   </li>
+  <% end -%>
+ </ul>
+ <% else %>
+  <div class="no_text text-center">还没有内容</div>
+
+<% end -%>

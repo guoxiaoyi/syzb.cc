@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= BookOrder.human_attribute_name(:code) %>:</strong>
+  <%= @book_order.code %>
+</p>
+
+<p>
+  <strong><%= BookOrder.human_attribute_name(:total_price) %>:</strong>
+  <%= @book_order.total_price %>
+</p>
+
+<p>
+  <strong><%= BookOrder.human_attribute_name(:pick_up_at) %>:</strong>
+  <%= @book_order.pick_up_at %>
+</p>
+
+<p>
+  <strong><%= BookOrder.human_attribute_name(:pick_up_token) %>:</strong>
+  <%= @book_order.pick_up_token %>
+</p>
+
+<p>
+  <strong><%= BookOrder.human_attribute_name(:status) %>:</strong>
+  <%= @book_order.status %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_book_order_path(@book_order) %> |
+<%= link_to t('buttons.back'), admin_book_orders_path %>

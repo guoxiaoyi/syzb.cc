@@ -1,0 +1,1 @@
+json.extract! @vip, :name, :levels, :price, :parent_id, :created_at, :updated_at

@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: product_pictures
+#
+#  id            :integer          not null, primary key
+#  path          :string(255)
+#  product_id    :integer
+#  custom_order  :integer
+#  pricture_type :integer
+#  created_at    :datetime
+#  updated_at    :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  path: MyString
+  product_id: 1
+  custom_order: 1
+  pricture_type: 1
+
+two:
+  path: MyString
+  product_id: 1
+  custom_order: 1
+  pricture_type: 1

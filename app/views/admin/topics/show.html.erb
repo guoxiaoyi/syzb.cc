@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Topic.human_attribute_name(:node_id) %>:</strong>
+  <%= @topic.node_id %>
+</p>
+
+<p>
+  <strong><%= Topic.human_attribute_name(:user_id) %>:</strong>
+  <%= @topic.user_id %>
+</p>
+
+<p>
+  <strong><%= Topic.human_attribute_name(:title) %>:</strong>
+  <%= @topic.title %>
+</p>
+
+<p>
+  <strong><%= Topic.human_attribute_name(:content) %>:</strong>
+  <%= @topic.content %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_topic_path(@topic) %> |
+<%= link_to t('buttons.back'), admin_topics_path %>

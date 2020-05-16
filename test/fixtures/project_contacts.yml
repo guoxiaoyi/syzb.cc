@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: project_contacts
+#
+#  id           :integer          not null, primary key
+#  work_site_id :integer
+#  name         :string(255)
+#  tel          :string(255)
+#  datetime     :string(255)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  work_site_id: 1
+  name: MyString
+  tel: MyString
+  datetime: MyString
+
+two:
+  work_site_id: 1
+  name: MyString
+  tel: MyString
+  datetime: MyString

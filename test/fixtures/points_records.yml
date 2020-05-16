@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: points_records
+#
+#  id         :integer          not null, primary key
+#  user_id    :integer
+#  points     :decimal(10, 2)
+#  balance    :decimal(10, 2)
+#  title      :string(255)
+#  brief      :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  points: 1
+
+two:
+  user_id: 1
+  points: 1

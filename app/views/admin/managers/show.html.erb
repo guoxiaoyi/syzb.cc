@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Manager.human_attribute_name(:name) %>:</strong>
+  <%= @manager.name %>
+</p>
+
+<p>
+  <strong><%= Manager.human_attribute_name(:email) %>:</strong>
+  <%= @manager.email %>
+</p>
+
+
+
+<p>
+  <strong><%= Manager.human_attribute_name(:supper) %>:</strong>
+  <%= @manager.supper %>
+</p>
+
+<p>
+  <strong><%= Manager.human_attribute_name(:disabled) %>:</strong>
+  <%= @manager.disabled %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_manager_path(@manager) %> |
+<%= link_to t('buttons.back'), admin_managers_path %>

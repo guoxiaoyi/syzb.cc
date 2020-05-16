@@ -1,0 +1,33 @@
+<div class="x_panel">
+  <div class="x_title">
+    <h2>活动分类
+      <small>
+        <%= link_to "新增", new_admin_activity_category_path, class: 'btn btn-info btn-sm' %>
+      </small>
+    </h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th><%= ItemCategory.human_attribute_name(:name) %></th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @item_categories.each_with_index do |item_category, index| %>
+        <tr>
+          <td><%= index+1%></td>
+          <td><%= item_category.name %></td>
+          <td>
+            <%= link_to t('actions.edit'), edit_admin_activity_category_path(item_category) %>
+            <%= link_to t('actions.destroy'), admin_activity_category_path(item_category), method: :delete, data: { confirm: '你确定吗?' } %>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

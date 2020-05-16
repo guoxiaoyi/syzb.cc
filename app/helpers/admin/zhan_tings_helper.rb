@@ -1,0 +1,2 @@
+module Admin::ZhanTingsHelper
+end

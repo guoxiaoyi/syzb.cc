@@ -1,0 +1,15 @@
+<%= simple_form_for([:admin, @user, @points_record]) do |f| %>
+  <%= f.error_notification %>
+    <%#= f.input :user_id %>
+    <%= f.input :points %>
+    <%= f.input :title %>
+    <%= f.input :brief %>
+  <div class="ln_solid"></div>
+
+  <div class="item form-group">
+      <div class="col-md-6 col-sm-6 offset-md-3">
+          <%= link_to t('buttons.back'), admin_users_path, class: 'btn btn-secondary' %>
+          <%= f.button :submit, class: 'btn btn-success' %>
+      </div>
+  </div>
+<% end %>

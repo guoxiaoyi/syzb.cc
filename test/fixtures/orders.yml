@@ -1,0 +1,40 @@
+# == Schema Information
+#
+# Table name: orders
+#
+#  id                :integer          not null, primary key
+#  code              :string(255)
+#  total_price       :decimal(10, 2)
+#  pick_up_at        :datetime
+#  pick_up_token     :string(255)
+#  pick_up_ed        :datetime
+#  user_id           :integer
+#  manager_id        :integer
+#  status            :integer
+#  categoryable_id   :integer
+#  categoryable_type :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+# Indexes
+#
+#  index_orders_on_categoryable_id_and_categoryable_type  (categoryable_id,categoryable_type)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: MyString
+  total_price: 9.99
+  pick_up_at: 2020-02-09 23:15:32
+  pick_up_token: MyString
+  user_id: 1
+  status: 1
+
+two:
+  code: MyString
+  total_price: 9.99
+  pick_up_at: 2020-02-09 23:15:32
+  pick_up_token: MyString
+  user_id: 1
+  status: 1

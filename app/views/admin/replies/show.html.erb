@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Reply.human_attribute_name(:topic_id) %>:</strong>
+  <%= @reply.topic_id %>
+</p>
+
+<p>
+  <strong><%= Reply.human_attribute_name(:user_id) %>:</strong>
+  <%= @reply.user_id %>
+</p>
+
+<p>
+  <strong><%= Reply.human_attribute_name(:content) %>:</strong>
+  <%= @reply.content %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_reply_path(@reply) %> |
+<%= link_to t('buttons.back'), admin_replies_path %>

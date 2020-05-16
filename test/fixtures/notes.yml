@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: notes
+#
+#  id             :integer          not null, primary key
+#  title          :string(255)
+#  content        :text
+#  recommendation :boolean          default(FALSE)
+#  is_over        :boolean          default(FALSE)
+#  user_id        :integer
+#  manager_id     :integer
+#  price          :decimal(10, 2)
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  content: MyText
+  recommendation: false
+  price: 1
+
+two:
+  title: MyString
+  content: MyText
+  recommendation: false
+  price: 1

@@ -1,0 +1,2 @@
+module Admin::HomeFormsHelper
+end

@@ -1,0 +1,61 @@
+<% content_for :title ,'搜索结果页' -%>
+  <div class="g-body">
+
+           <div class="cntTitle">
+        <h1 class="title">搜索结果</h1>
+                <div class="cntBar" style="margin-top:57px;">
+        <div class="bar">您的位置：<em>&gt;</em><strong>整站搜索结果</strong></div>
+          </div>
+      </div>
+
+      <% unless params[:key].blank? %>
+           <div class="g-inr">
+              <div class="resultbar">搜索关键字<strong class="fc_03c"><%= params[:key] -%></strong>的结果 </div>
+              <div class="result_content">
+          <div class="resultlist">
+        <ul>
+          <% @reslut.each do |a|%>
+          <% if a.class.name == "WizcmsArticle::Article" %>
+          <li>
+            <h3><%= link_to a.title, article_path("#{a.id}.html"), target: "_blank"%></h3>
+            <p><%= truncate_u(strip_tags(a.content), 100)%></p>
+            <span>
+              <small>分类：<%= a.article_category.try(:name) -%></small>
+              <small>日期：<%= a.created_at%></small>
+            </span>
+          </li>
+          <% end -%>
+          <% if a.class.name == "Product" %>
+          <li>
+            <h3><%= link_to a.title, case_path("#{a.id}.html"), target: "_blank"%></h3>
+            <%= link_to case_path("#{a.id}.html"), target: "_blank" do %>
+              <%= image_tag a.product_pictures.where(pricture_type: 0).first.try(:path), class: "tupian" %>
+            <% end -%>
+            <span>
+              <small>分类：精选案例 </small>
+              <small>日期：<%= a.created_at%></small>
+            </span>
+          </li>
+          <% end -%>
+          <% if a.class.name == "WorkSite" %>
+          <li>
+            <h3><%= link_to a.title, project_path("#{a.id}.html"), target: "_blank"%></h3>
+            <%= link_to project_path("#{a.id}.html"), target: "_blank" do %>
+              <%= image_tag a.picture, class: "tupian"  %>
+            <% end -%>
+            <span>
+              <small>分类：参观工地 </small>
+              <small>日期：<%= a.created_at%></small>
+            </span>
+          </li>
+          <% end -%>
+          <% end -%>
+      </ul>
+      <% end -%>
+    </div><!-- /resultlist -->
+
+        <!--分页符模块开始-->
+        <!-- <div class="g-inr"> <%#= paginate @reslut %> </div> -->
+          <!--分页符模块结束-->
+    </div>
+  </div>

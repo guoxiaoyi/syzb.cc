@@ -1,0 +1,52 @@
+<% content_for :title ,'设计团队' -%>
+<header class="g-hd">
+  <%= link_to root_path, class: "btnfanhui-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+  <div class="btnMenu-page"><span class="ico sprite"></span></div>
+  <strong>设计团队</strong>
+  <%= link_to serach_index_path, class: "btnSearch-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+</header>
+    
+     <section class="g-body Common">
+     <form action="" method="post" onsubmit="return checkForm(this);">
+            <div class="formShip formPublish"> 
+                <div class="shaixuan">                
+                <div class="inputItem f-box" style="margin:0 auto;">
+                    <div class="selectWrap" >
+                            <select name="" data-tipNull="请选择风格" onchange="window.location=this.value">
+      <option value="/designer.html">请选择风格</option>
+      <% Fg.all.order(created_at: :desc).each do |group| -%>
+  <option value=<%= "/designer.html?fg_id=#{group.id}" -%> <%= 'selected' if group.id.to_s == params[:fg_id] -%>><%= group.title -%></option>
+<% end -%>
+    </select>
+                    <span class="arrow"></span>
+                    </div>
+                </div>
+                
+                </div>
+           </div>
+           </form>
+	</section>
+
+<section class="g-body">
+  <div class="pageTeam">
+    <ul class="teamList">
+
+      <% @designers.each do |designer| %>
+      <li>
+
+        <%= link_to designer_path("#{designer.id}.html") do %>
+          <%= image_tag designer.avatar %>
+        <% end -%>
+        <p class="text">
+          <%= designer.name%> - <%= designer.zw %> <%= link_to "预约TA", "/designer/new.html?id=#{designer.id}", class: "yyt" %>
+        </p>
+
+      </li>
+      <% end -%>
+    </ul>
+  </div><!--资深设计团队 结束-->
+</section>

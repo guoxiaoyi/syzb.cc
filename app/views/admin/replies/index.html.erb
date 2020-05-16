@@ -1,0 +1,29 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th><%= Reply.human_attribute_name(:topic_id) %></th>
+      <th><%= Reply.human_attribute_name(:user_id) %></th>
+      <th><%= Reply.human_attribute_name(:content) %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @replies.each do |reply| %>
+      <tr>
+        <td><%= reply.topic_id %></td>
+        <td><%= reply.user_id %></td>
+        <td><%= reply.content %></td>
+        <td><%= link_to t('actions.show'), [:admin, reply] %></td>
+        <td><%= link_to t('actions.edit'), edit_admin_reply_path(reply) %></td>
+        <td><%= link_to t('actions.destroy'), [:admin, reply], method: :delete, data: { confirm: '你确定吗?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "#{t('actions.new')}#{Reply.model_name.human}", new_admin_reply_path, class: 'btn btn-default' %>

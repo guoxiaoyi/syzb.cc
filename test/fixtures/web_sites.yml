@@ -1,0 +1,39 @@
+# == Schema Information
+#
+# Table name: web_sites
+#
+#  id               :integer          not null, primary key
+#  title            :string(255)
+#  keywords         :string(255)
+#  description      :string(255)
+#  qq               :string(255)
+#  tel              :string(255)
+#  service          :string(255)
+#  qrcode           :string(255)
+#  created_at       :datetime
+#  updated_at       :datetime
+#  email            :string(255)
+#  web_app          :string(255)
+#  supplement       :text
+#  supplement_style :text
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  keywords: MyString
+  description: MyString
+  qq: MyString
+  tel: MyString
+  service: MyString
+  qrcode: MyString
+
+two:
+  title: MyString
+  keywords: MyString
+  description: MyString
+  qq: MyString
+  tel: MyString
+  service: MyString
+  qrcode: MyString

@@ -1,0 +1,1 @@
+json.extract! @points_record, :user_id, :points, :title, :brief, :created_at, :updated_at

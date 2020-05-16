@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Node.human_attribute_name(:title) %>:</strong>
+  <%= @node.title %>
+</p>
+
+<p>
+  <strong><%= Node.human_attribute_name(:manager_id) %>:</strong>
+  <%= @node.manager_id %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_node_path(@node) %> |
+<%= link_to t('buttons.back'), admin_nodes_path %>

@@ -5,6 +5,7 @@ capybara-*.html
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*
 /public/system
+/public/*
 /coverage/
 /spec/tmp
 *.orig
@@ -55,7 +56,7 @@ node_modules/
 # Ignore precompiled javascript packs
 /public/packs
 /public/packs-test
-/public/assets
+!/public/assets
 
 # Ignore yarn files
 /yarn-error.log

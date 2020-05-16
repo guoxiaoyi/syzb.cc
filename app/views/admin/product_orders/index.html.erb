@@ -1,0 +1,116 @@
+<%= content_for :stylesheets do %>
+  <link href="/assets/gentelella/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/gentelella/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+<% end %>
+
+<div class="x_panel">
+  <div class="x_title">
+    <h2>商品订单 <small> <%= link_to "导出文档", admin_product_orders_path(format: "xlsx"), id: "ExportingExcel"%> </small></h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-hover table-bordered" id="datatable">
+      <thead>
+        <tr>
+          <th><input type="checkbox" name="all" class="weui-check" id="all"></th>
+          <th><%= Order.human_attribute_name(:code) %></th>
+          <th>创建时间</th>
+          <th><%= Order.human_attribute_name(:user_id) %></th>
+          <th><%= Order.human_attribute_name(:categoryable_type) %></th>
+          <th><%= Order.human_attribute_name(:total_price) %></th>
+          <th><%= Order.human_attribute_name(:pick_up_at) %></th>
+          <th><%= Order.human_attribute_name(:pick_up_token) %></th>
+          <th><%= Order.human_attribute_name(:status) %></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @book_orders.each do |book_order| %>
+          <tr>
+            <td><input type="checkbox" name="checkbox_<%= book_order.id %>" id="checkbox_<%= book_order.id %>"></td>
+            <td><%= book_order.code %></td>
+            <td> <%= book_order.created_at %> </td>
+            <td><%= book_order.user.name %></td>
+            <td><%= book_order.categoryable.name %></td>
+            <td><%= book_order.total_price %></td>
+            <td><%= book_order.pick_up_at %></td>
+            <td><%= book_order.pick_up_token %></td>
+            <td> <%= book_order.status_i18n %> </td>
+            <td> <%= link_to t('actions.edit'), edit_admin_product_order_path(book_order) %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<%= content_for :javascript do %>
+  <script src="/assets/gentelella/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="/assets/gentelella/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="/assets/gentelella/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="/assets/gentelella/jszip/dist/jszip.min.js"></script>
+  <script src="/assets/gentelella/pdfmake/build/pdfmake.min.js"></script>
+  <script src="/assets/gentelella/pdfmake/build/vfs_fonts.js"></script>
+  <script type="text/javascript">
+    $("#all").on('change', function(){
+       if($(this).prop("checked")) {
+         $("input[name^='checkbox_']").prop("checked", true);
+       } else {
+         $("input[name^='checkbox_']").prop("checked", false);
+       }
+       set_order_ids();
+     });
+
+     $("input[name^='checkbox_']").on('change', function() {
+       set_order_ids();
+     });
+
+     function set_order_ids(){
+       var ids = "";
+
+       $.each($("input[name^='checkbox_']:checked"), function() {
+         ids += $(this).attr("id").replace("checkbox_", "");
+         ids += ",";
+       });
+
+       if(ids != ""){
+         ids = ids.substring(0, ids.length-1);
+       } else {
+         ids = "";
+       }
+       var _url = $("#ExportingExcel").attr('href');
+       $("#ExportingExcel").attr('href', changeURLArg(_url, "ids", ids))
+     }
+
+     function changeURLArg(url,params,value){
+       console.log(url)
+       var pattern = params + '=([^&]*)';
+       var replaceText = params + '=' + value;
+       if(url.match(pattern)){
+         var tmp = '/('+  params + '=)([^&]*)/gi';
+         tmp = url.replace(eval(tmp),replaceText);
+         return tmp;
+       }else{
+         if(url.match('[\?]')){
+           return url+'&'+replaceText;
+         }else{
+           return url+'?'+replaceText;
+         }
+       }
+     }
+  </script>
+<% end %>
+

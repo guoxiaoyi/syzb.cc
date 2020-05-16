@@ -1,0 +1,30 @@
+# == Schema Information
+#
+# Table name: topics
+#
+#  id         :integer          not null, primary key
+#  node_id    :integer
+#  user_id    :integer
+#  title      :string(255)
+#  content    :text
+#  created_at :datetime
+#  updated_at :datetime
+#
+# Indexes
+#
+#  index_topics_on_node_id  (node_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  node_id: 1
+  user_id: 1
+  title: MyString
+  content: MyText
+
+two:
+  node_id: 1
+  user_id: 1
+  title: MyString
+  content: MyText

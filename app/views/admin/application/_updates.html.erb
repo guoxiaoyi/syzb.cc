@@ -1,0 +1,17 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>更新内容</th>
+      <th>时间</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @updates.each do |commit| %>
+      <tr>
+        <td><%= commit.title %></td>
+        <td><%= Time.parse( commit.created_at ) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

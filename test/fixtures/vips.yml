@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: vips
+#
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  levels     :integer
+#  price      :decimal(10, 2)
+#  parent_id  :integer
+#  content    :text
+#  created_at :datetime
+#  updated_at :datetime
+#
+# Indexes
+#
+#  index_vips_on_parent_id  (parent_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  levels: 1
+  price: 1
+  parent_id: 1
+
+two:
+  name: MyString
+  levels: 1
+  price: 1
+  parent_id: 1

@@ -1,0 +1,63 @@
+<% content_for :title , "#{@designer.name} #{@designer.zw} "  -%>
+<div class="pagebnr bnr4">
+  <div class="g-inr"><span><% image_tag "banner-tit.png" -%></span></div>
+</div>
+<div class="g-body">
+  <div class="g-inr">
+    <div class="p_left f-fl"><h3 class="title sjs">设计团队</h3></div><!--p_left end-->
+    <div class="p_right f-fr">
+      <div class="weizhi"><em class="f-fr">当前位置：首页 > 设计团队 > <%= @designer.name %></em></div>
+    </div><!--p_right end-->
+  </div>
+
+  <!--设计师详细模块开始-->
+  <div class="desginer-page">
+    <div class="d-1"><%= image_tag @designer.avatar %></div>
+      <div class="d-2">
+        <h3><%= @designer.name %></h3>
+        <p><%= @designer.zw %></p>
+        <p>工作年限：<%= @designer.gl %> 年</p>
+        
+        <p>归属部门：<%= DesignerDepartment.find_by(id: @designer.designer_group_id).try(:designer_group).try(:name)  %> - <%= DesignerDepartment.find_by(id: @designer.designer_group_id).try(:name)  %>
+          </p>
+          
+        <%= link_to "预约TA设计", "/designer/new.html?id=#{@designer.id}" %>
+        <a href="<%= WebSite.first.try(:qq)%>" class="zx" target="_blank">在线咨询</a>
+      </div>
+      <div class="d-4">
+        <h3>个人简介</h3>
+        <p><%= raw @designer.content %></p>
+      </div>
+  </div>
+  <!--设计师详细模块结束-->
+
+
+  <!--其他案例模块开始-->
+  <div class="case-list">
+    <div class="title2">
+      <div class="g-inr"> <h3>本设计师的案例</h3> </div>
+      <p class="line"></p>
+    </div><!--title end-->
+    <div class="g-inr">
+      <ul>
+      <% @designer.products.each do |c|%>
+        <li class="trst mb0">
+          <div class="sjsbig">
+            <%= link_to case_path("#{c.id}.html"), class: "sjsimgLink" do %>
+              <%= image_tag c.product_pictures.where(pricture_type: 0).first.try(:path)%>
+              <span class="sjseyeIco trst"><%= image_tag "three-dots.svg" -%></span>
+            <% end -%>
+          </div>
+          <div class="text h150">
+            <div class="t1"><%= c.title%></div>
+            <div class="t4">设计风格：<%= c.fg.title%> - 房屋面积：<%=c.mj.title%> </div>
+          </div>
+        </li>
+      <% end -%>
+      </ul>
+    </div>
+  </div>
+  <!--其他案例模块结束-->
+</div>
+
+

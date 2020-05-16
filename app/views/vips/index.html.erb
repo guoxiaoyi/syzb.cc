@@ -1,0 +1,31 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th><%= Vip.human_attribute_name(:name) %></th>
+      <th><%= Vip.human_attribute_name(:levels) %></th>
+      <th><%= Vip.human_attribute_name(:price) %></th>
+      <th><%= Vip.human_attribute_name(:parent_id) %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vips.each do |vip| %>
+      <tr>
+        <td><%= vip.name %></td>
+        <td><%= vip.levels %></td>
+        <td><%= vip.price %></td>
+        <td><%= vip.parent_id %></td>
+        <td><%= link_to t('actions.show'), [:admin, vip] %></td>
+        <td><%= link_to t('actions.edit'), edit_admin_vip_path(vip) %></td>
+        <td><%= link_to t('actions.destroy'), [:admin, vip], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "#{t('actions.new')}#{Vip.model_name.human}", new_admin_vip_path, class: 'btn btn-default' %>

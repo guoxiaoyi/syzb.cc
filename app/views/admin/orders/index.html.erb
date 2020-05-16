@@ -1,0 +1,23 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= link_to t('actions.show'), [:admin, order] %></td>
+        <td><%= link_to t('actions.edit'), edit_admin_order_path(order) %></td>
+        <td><%= link_to t('actions.destroy'), [:admin, order], method: :delete, data: { confirm: '你确定吗?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "#{t('actions.new')}#{Order.model_name.human}", new_admin_order_path, class: 'btn btn-default' %>

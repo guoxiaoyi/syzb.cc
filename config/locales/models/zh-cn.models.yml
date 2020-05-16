@@ -1,0 +1,220 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh-cn:
+  activemodel:
+  activerecord:
+    models:
+      affiliate_store_application: 合作加盟
+      lecture_application: 讲座申请
+      competition_team: 创业大赛
+      user: 用户
+      designer: 设计师
+      designer_group: 事业部门
+      product: 产品
+      product_picture: 案例图片
+      fg: 风格
+      hx: 户型
+      mj: 面积
+      yusuan: 预算
+      work_site: 工地
+      banner: 首页幻灯
+      web_site: 网站配置
+      video_config: 视频管理
+      home_bottom: 首页底部活动图片
+      zhan_ting: 逛展厅幻灯片
+      mobile_banner: 手机幻灯片
+      project_banner: 参观工地幻灯片
+      tao_can: 预约套餐
+      contact_a: 预约0元免费设计
+      liang: 预约上门量房
+      designer_contact: 预约设计师
+      project_contact: 预约参观工地
+      bao_jia: 装修&方案
+      home_form: 预估报价报名(底部浮动)
+      wizcms_article/article_category: 文章类别
+      page: 单页面管理
+      category: 分类
+      link: 3ddd
+      designer_department: 设计部门
+    attributes:
+      product:
+        title: 标题
+        lp_name: 楼盘地址
+        fg_id: 风格
+        hx_id: 户型
+        yusuan_id: 预算
+        mj_id: 面积
+        content: 内容
+        designer_id: 设计师
+        tj: 是否推荐
+      designer_department:
+        name: 部门名称
+        designer_group_id: 所属事业部
+      designer_contact:
+        designer_id: 设计师
+      designer_group:
+        name: 部门名称
+      page:
+        title: 标题
+        url: 地址
+        content: 电脑内容
+        mobile_content: 手机内容
+      zhan_ting:
+        path: 图片
+        order: 排序
+      video_config:
+        content: 内容
+        position: 位置
+      web_site:
+        title: 标题
+        keywords: 关键词
+        description: 描述
+        qq: 在线qq
+        tel: 官方热线
+        service: 售后电话
+        qrcode: 微信二维码
+        web_app: 商城App
+        supplement: 补充代码
+        supplement_style: 补充样式
+      banner:
+        path: 图片
+        order: 排序
+        url: 链接
+      product_picture:
+       path: 图片
+       product_id: 案例
+       custom_order: 排序
+       pricture_type: 图片类型
+      designer:
+        designer_group_id: 部门
+        name: 姓名
+        zw: 职位
+        gl:  工龄(年)
+        content:  简介
+        avatar:  头像
+        custom_order: 排序
+      fg:
+        title: 名称
+      hx:
+        title: 名称
+      mj:
+        title: 名称
+      yusuan:
+        title: 名称
+      work_site:
+        title: 标题
+        mj: 面积
+        fg_id: 风格
+        designer_id: 设计师
+        address: 地址
+        build_before: 施工前期
+        building: 施工中期
+        build_after: 施工后期
+        picture: 缩略图
+        jianli: 监理
+      competition_team:
+        user_id: ID
+        name: 团队名称
+        slogan: 团队口号
+        leader_name: 队长姓名
+        leader_organization: 学校或公司
+        created_at: 报名时间
+        mobile: 手机号码
+        email: 联系邮箱
+        description: 团队及成员描述
+        level: 组别
+      promote:
+        key: 客户code
+        name: 推广名称
+        description: 推广描述
+        wechat_qrcode_id: 微信二维码
+      box_office:
+        amount: 票房（万元）
+        play_number: 放映场次
+        watcher_number: 观影人次（万人）
+        play_date: 放映日期
+        created_at: 创建日期
+        updated_at: 更新日期
+        unlottery: 未开奖
+      user_guess_box_office:
+        user_id: 用户名
+        guess_amount: 票房（万元）
+        guess_date: 参与日期
+        undelivery: 为发货
+        delivery: 已发货
+      card:
+        code: 卡号：
+        entity: 卡别
+        category: 分类
+        value: 金额
+        product_id: 产品
+        password: 密码：
+        workflow_state: 状态
+      martime_active:
+        name: 姓名
+        tel: 电话
+        college: 学院
+        grade: 年级
+  enums:
+    affiliate_store_application:
+      sex:
+        male: 男
+        female: 女
+      affiliate_type:
+        zone: 区域加盟
+        sigle_store: 单店加盟
+
+    order:
+      delivery_mode:
+        self_delivery: 自提
+        deliver_foot: 送餐
+        express: 快递
+        in_store: 店面
+        dine: 堂食
+    work_site:
+      state:
+        ing: 施工中
+        ed: 竣工
+    wechat_qrcode:
+      qr_category:
+        qr_scene: 临时
+        qr_limit_scene: 永久
+    store:
+      workflow_state:
+        opened: 已开业
+        closed: 未开业
+    product:
+      product_type:
+        rice: 大米
+        rice_bucket: 桶饭
+        crowdfunding: 众筹
+        rice_package: 大米套餐
+    manager:
+      role:
+        super_administrator: 超级管理员
+        finance: 财务
+        general: 总经理
+        news_editer: 新闻编辑
+    user:
+      sex:
+        nil: 未设置
+        male: 男
+        female: 女
+    coupon:
+      coupon_type:
+        rice: 买米红包
+        food: 订餐红包
+        auto: 通用
+        tonget: 通用
+    card:
+      workflow:
+        awaiting_authorize: 待授权
+        awaiting_activate: 待激活
+        activated: 已激活
+        already_used: 已使用
+        refunded: 已退款
+    user_rice_bucket:
+      manager:
+        admin: 管理员
+        ordinary_user: 用户

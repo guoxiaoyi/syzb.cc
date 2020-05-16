@@ -1,0 +1,1 @@
+json.extract! @book_order, :code, :total_price, :pick_up_at, :pick_up_token, :status, :created_at, :updated_at

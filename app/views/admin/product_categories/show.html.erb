@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:name) %>:</strong>
+  <%= @activity_category.name %>
+</p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:custom_order) %>:</strong>
+  <%= @activity_category.custom_order %>
+</p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:parent_id) %>:</strong>
+  <%= @activity_category.parent_id %>
+</p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:brief) %>:</strong>
+  <%= @activity_category.brief %>
+</p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:published) %>:</strong>
+  <%= @activity_category.published %>
+</p>
+
+<p>
+  <strong><%= ActivityCategory.human_attribute_name(:cite_key) %>:</strong>
+  <%= @activity_category.cite_key %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_activity_category_path(@activity_category) %> |
+<%= link_to t('buttons.back'), admin_activity_categories_path %>

@@ -1,0 +1,42 @@
+<div class="x_panel">
+  <div class="x_title">
+    <h2>心得管理</h2>
+    <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th><%= Note.human_attribute_name(:title) %></th>
+          <th><%= Note.human_attribute_name(:content) %></th>
+          <th><%= Note.human_attribute_name(:recommendation) %></th>
+          <th><%= Note.human_attribute_name(:price) %></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @notes.each do |note| %>
+          <tr>
+            <td width="300"><%= note.title %></td>
+            <td width="500">
+              <%= note.content.truncate(35) if !note.content.blank?%>
+
+            </td>
+            <td><%= note.recommendation %></td>
+            <td><%= note.price %></td>
+            <td>
+              <%= link_to t('actions.show'), [:admin, note] %>
+              <%= link_to t('actions.edit'), edit_admin_note_path(note) %>
+              <%= link_to t('actions.destroy'), [:admin, note], method: :delete, data: { confirm: '你确定吗?' } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+<%#= link_to "#{t('actions.new')}#{Note.model_name.human}", new_admin_note_path, class: 'btn btn-default' %>

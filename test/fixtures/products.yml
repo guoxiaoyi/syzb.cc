@@ -1,0 +1,47 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id                :integer          not null, primary key
+#  name              :string(255)
+#  manager_id        :integer
+#  categoryable_id   :integer
+#  categoryable_type :string(255)
+#  price             :decimal(10, 2)
+#  discount          :decimal(10, 2)
+#  detail            :text
+#  online            :boolean          default(TRUE)
+#  customize_order   :integer
+#  recommendation    :boolean
+#  created_at        :datetime
+#  updated_at        :datetime
+#  stock             :integer          default(0)
+#
+# Indexes
+#
+#  index_products_on_categoryable_id_and_categoryable_type  (categoryable_id,categoryable_type)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  manager_id: 1
+  categoryable_id: 1
+  categoryable_type: MyString
+  price: 9.99
+  detail: MyText
+  online: false
+  customize_order: 1
+  recommendation: false
+
+two:
+  name: MyString
+  manager_id: 1
+  categoryable_id: 1
+  categoryable_type: MyString
+  price: 9.99
+  detail: MyText
+  online: false
+  customize_order: 1
+  recommendation: false

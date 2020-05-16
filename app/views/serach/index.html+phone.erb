@@ -1,0 +1,58 @@
+<% content_for :title ,'搜索结果页' -%>
+<header class="g-search">
+  <form action="<%= serach_index_path %>" method="get">
+    <div class="searchInput">
+      <input class="submit" type="submit" value="">
+      <input class="text" type="text"  value="<%= params[:key] -%>" name="key" placeholder="搜索案例、工地、新闻">
+    </div>
+    <a class="cancel" href="javascript:history.back()">取消</a>
+  </form>
+</header>
+
+<section class="rstWrap">
+  <% unless params[:key].blank? %>
+  <p class="rstTip">搜索关键词 <span class="color2"><%= params[:key]%></span> 的 结果</p>
+  <ul class="rstList">
+    
+ 
+    
+    <% @reslut.each do |a|%>
+    <% if a.class.name == "WizcmsArticle::Article" %>
+    <li>
+      <%= link_to article_path(a), class: "f-box" do %>
+       <%= image_tag a.picture, class: ""  %>
+        <div class="info f-flex">
+	    <p class="name  f-toe"><%= truncate_u(a.title, 15)%></p>
+	    <p class="intro">分类：<%= a.article_category.try(:name) -%><br>日期：<%= a.created_at%></p>
+	    </div>
+      <% end -%>
+    </li>
+    <% end -%>
+    
+    <% if a.class.name == "Product" %>
+    <li>
+      <%= link_to case_path(a), class: "f-box" do %>
+        <%= image_tag a.product_pictures.where(pricture_type: 0).first.try(:path), class: "" %>
+        <div class="info f-flex">
+	    <p class="name  f-toe"><%= truncate_u(a.title, 15)%></p>
+	    <p class="intro">分类：精选案例<br>日期：<%= a.created_at%></p>
+	    </div>
+      <% end -%>
+    </li>
+    <% end -%>
+    
+    <% if a.class.name == "WorkSite" %>
+    <li>
+      <%= link_to project_path(a), class: "f-box" do %>
+       <%= image_tag a.picture, class: ""  %>
+        <div class="info f-flex">
+	    <p class="name  f-toe"><%= truncate_u(a.title, 15)%></p>
+	    <p class="intro">分类：参观工地<br>日期：<%= a.created_at%></p>
+	    </div>
+      <% end -%>
+    </li>
+    <% end -%>
+    <% end -%>
+  </ul>
+  <% end -%>
+<section>

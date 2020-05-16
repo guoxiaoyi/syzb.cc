@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:name) %>:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:price) %>:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:detail) %>:</strong>
+  <%= @product.detail %>
+</p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:online) %>:</strong>
+  <%= @product.online %>
+</p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:customize_order) %>:</strong>
+  <%= @product.customize_order %>
+</p>
+
+<p>
+  <strong><%= Product.human_attribute_name(:recommendation) %>:</strong>
+  <%= @product.recommendation %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_product_path(@product) %> |
+<%= link_to t('buttons.back'), admin_products_path %>

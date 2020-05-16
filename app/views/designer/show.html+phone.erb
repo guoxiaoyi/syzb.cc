@@ -1,0 +1,46 @@
+<% content_for :title ,'设计团队' -%>
+<header class="g-hd">
+  <%= link_to root_path, class: "btnfanhui-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+  <div class="btnMenu-page"><span class="ico sprite"></span></div>
+  <strong>设计团队</strong>
+  <%= link_to serach_index_path, class: "btnSearch-page" do %>
+    <span class="ico sprite"></span>
+  <% end -%>
+</header>
+
+
+<section class="g-body">
+  <div class="design-pege">
+    <span class="tx"><%= image_tag @designer.avatar %></span>
+    <h3><%= @designer.zw %> · <%= @designer.name -%></h3>
+    <p>工作年限<%= @designer.gl -%>年</p>
+  </div>
+</section>
+
+<section class="g-body Common">
+  <p class="CommonContent xian"><strong>个人简介</strong></p>
+  <div class="CommonContent">
+    <%= raw @designer.content %>
+  </div>
+</section>
+
+  <section class="g-body" style="margin:10px 0;">
+
+  <div class="indexCaseM">
+  <h1 class="title">本设计师案例<br><em>激发您的装修灵感</em></h1>
+    <ul>
+      <% @designer.products.each do |c|%>
+        <li>
+          <%= link_to case_path("#{c.id}.html") do %>
+            <%= image_tag c.product_pictures.where(pricture_type: 0).first.try(:path) -%>
+            <p class="t1 f-toe"><%= c.title -%> </p>
+            <p class="t2">设计师：<%= c.designer.name -%></p>
+          <% end -%>
+        </li>
+      <% end -%>
+    </ul>
+  </div>
+</section>
+<%= link_to "预约TA设计", "/designer/new.html?id=#{@designer.id}", class: "yysjs", style: "color:#FFF;" %>

@@ -1,0 +1,91 @@
+<% content_for :title , "#{@c.title} 精选案例" -%>
+<div class="pagebnr bnr1">
+  <div class="g-inr"><span><%= image_tag "banner-tit.png" -%></span></div>
+</div>
+<div class="g-body">
+  <div class="g-inr">
+    <div class="p_left f-fl"><h3 class="title anli">精选案例</h3></div><!--p_left end-->
+    <div class="p_right f-fr">
+      <div class="weizhi"><em class="f-fr">当前位置：首页 > 精选案例 > <%= @c.title %></em></div>
+    </div><!--p_right end-->
+  </div><!--g-inr end-->
+
+
+
+  <!--案例详细模块开始-->
+  <div class="case-page">
+    <div class="left">
+      <div class="text">
+          <h3><%= @c.title %></h3>
+          <h4>楼盘地址：<%= @c.lp_name%>  案例面积：<%= @c.mj.title %> 设计风格：<%= @c.fg.title %></h4>
+          <div><%= raw @c.content%></div>
+      </div>
+
+      <div class="baguetteBoxOne2 gallery2">
+        <div class="w800">
+
+          <% @c.product_pictures.where(pricture_type: 1).each do |picture|%>
+            <%= link_to "#{picture.path}", class: "imgbig" do %>
+              <%= image_tag picture.path, class: "thumbnail" -%>
+              <span class="eyeIco2 trst"></span>
+            <% end -%>
+          <% end -%>
+        </div>
+      </div>
+    </div><!--left end-->
+    <div class="right">
+      <div class="des-1">
+        <div class="mask"></div>
+        <div class="mer"><%= image_tag @c.designer.avatar%></div>
+      </div>
+      <h3><%= @c.designer.name %></h3>
+      <p><em class="color1"><%= @c.designer.zw -%></em> 工作年限：<%= @c.designer.gl -%>年 </p>
+      <%= link_to "预约TA", "/designer/new.html?id=#{@c.designer.id}" %>
+      <a href="<%= WebSite.first.try(:qq)%>" class="zx" target="_blank">在线咨询</a>
+
+    </div><!--right end-->
+  </div><!--案例详细模块结束-->
+
+  <div class="case-list">
+    <div class="title">
+      <h3 style="background:#f3f3f3;">推荐其他案例<br><em>探索更多案例</em></h3>
+      <p class="line"></p>
+    </div><!--title end-->
+    <div class="g-inr">
+      <ul>
+        <% Product.where(tj: true).each do |c| %>
+        <% if c.designer %>
+        <li class="trst">
+          <div class="big">
+            <%= link_to case_path("#{c.id}.html"), class: "imgLink" do %>
+              <%= image_tag c.product_pictures.where(pricture_type: 0).first.try(:path)%>
+              <span class="eyeIco trst"><h2><%= c.title %></h2></span>
+            <% end -%>
+          </div>
+          <div class="text">
+            <div class="t1">设计风格：<%= c.fg.title -%> - 房屋面积：<%= c.mj.title -%></div>
+            <div class="t2">
+              <div class="t2-1">
+                <div class="mask"></div>
+                <div class="mer"><%= image_tag c.designer.avatar -%></div>
+              </div>
+              <div class="t2-2"><h3><%= c.designer.name -%></h3><p><span class="name"><%= c.designer.zw -%></span></p></div>
+              <%= link_to "预约TA", "/designer/new.html?id=#{@c.designer.id}",class: "t2-3" %>
+            </div>
+          </div>
+        </li>
+        <% end %>
+        <% end -%>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<% content_for :script do %>
+  <script type="text/javascript">
+    baguetteBox.run('.baguetteBoxOne2', {
+      animation: 'fadeIn',
+    });
+
+  </script>
+<% end -%>

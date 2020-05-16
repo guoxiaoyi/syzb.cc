@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: designers
+#
+#  id                :integer          not null, primary key
+#  name              :string(255)
+#  zw                :string(20)
+#  gl                :integer
+#  content           :text
+#  avatar            :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#  designer_group_id :integer
+#  fg_id             :integer
+#  custom_order      :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  zw: MyString
+  gl: 1
+  content: MyText
+  avatar: MyString
+
+two:
+  name: MyString
+  zw: MyString
+  gl: 1
+  content: MyText
+  avatar: MyString

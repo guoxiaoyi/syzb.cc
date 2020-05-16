@@ -1,0 +1,27 @@
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th><%= ActivityRecord.human_attribute_name(:user_id) %></th>
+      <th><%= ActivityRecord.human_attribute_name(:activity_id) %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activity_records.each do |activity_record| %>
+      <tr>
+        <td><%= activity_record.user_id %></td>
+        <td><%= activity_record.activity_id %></td>
+        <td><%= link_to t('actions.show'), [:admin, activity_record] %></td>
+        <td><%= link_to t('actions.edit'), edit_admin_activity_record_path(activity_record) %></td>
+        <td><%= link_to t('actions.destroy'), [:admin, activity_record], method: :delete, data: { confirm: '你确定吗?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to "#{t('actions.new')}#{ActivityRecord.model_name.human}", new_admin_activity_record_path, class: 'btn btn-default' %>

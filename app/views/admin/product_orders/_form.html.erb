@@ -1,0 +1,30 @@
+<%= content_for :stylesheets do %>
+  <%= stylesheet_link_tag "admin/jquery.datetimepicker.min.css" -%>
+<% end %>
+
+<%= simple_form_for @book_order, url: admin_product_order_path do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :code, disabled: true %>
+  <%= f.input :total_price, disabled: true %>
+  <%= f.input :pick_up_at, as: :string %>
+  <%#= f.input :pick_up_ed, as: :string, required: true %>
+  <%= f.input :pick_up_token %>
+  <%= f.input :status %>
+  <div class="ln_solid"></div>
+
+  <div class="item form-group">
+    <div class="col-md-6 col-sm-6 offset-md-3">
+      <%= link_to t('buttons.back'), admin_product_orders_path, class: 'btn btn-secondary' %>
+      <%= f.button :submit, class: 'btn btn-success' %>
+    </div>
+  </div>
+<% end %>
+<%= content_for :javascript do %>
+    <%= javascript_include_tag 'admin/jquery.datetimepicker.full.min.js'%>
+    <script type="text/javascript">
+        jQuery.datetimepicker.setLocale('zh');
+        $('#order_pick_up_at').datetimepicker({
+            value:'<%=  @book_order.pick_up_at %>',
+        });
+    </script>
+<% end %>

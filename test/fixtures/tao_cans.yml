@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: tao_cans
+#
+#  id          :integer          not null, primary key
+#  name        :string(255)
+#  tel         :string(255)
+#  mj_id       :integer
+#  taocan_type :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  tel: MyString
+  mj_id: 1
+  taocan_type: MyString
+
+two:
+  name: MyString
+  tel: MyString
+  mj_id: 1
+  taocan_type: MyString

@@ -1,0 +1,1 @@
+json.extract! @activity, :title, :content, :customize_order, :start_time, :location, :description, :created_at, :updated_at

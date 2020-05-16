@@ -1,0 +1,39 @@
+admin_menu:
+  - model: manager
+    submenu:
+      - model: manager
+  - model: article
+    engine: wizcms_article
+    submenu:
+      - model: article
+        engine: wizcms_article
+      - model: article_category
+        engine: wizcms_article
+  - model: page
+    engine: wizcms_article
+    submenu:
+      - model: page
+        engine: wizcms_article
+  - model: file
+    engine: wizcms_article
+    submenu:
+      - model: file
+        engine: wizcms_article
+  - model: product
+  - model: home_bottom
+    submenu:
+      - model: fg
+      - model: hx
+      - model: mj
+      - model: yusuan
+      - model: product
+  - model: designer
+  - model: work_site
+  - model: link
+    engine: wizcms_link
+    submenu:
+      - model: link
+        engine: wizcms_link
+      - model: category
+        engine: wizcms_link
+  - model: content

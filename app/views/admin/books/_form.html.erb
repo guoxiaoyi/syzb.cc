@@ -1,0 +1,32 @@
+<%= simple_nested_form_for([:admin, @book]) do |f| %>
+    <%= f.error_notification %>
+
+    <%= f.input :name %>
+    <%= f.input :brief %>
+    <%= f.input :price %>
+    <%= f.input :stock %>
+    <%= f.input :categoryable_id, collection: ItemCategory.find_by(cite_key: 'book').children %>
+    <%= f.input :detail, as: :kindeditor, input_html: {width: '100%', height: 300}, id: 'my_editor', owner: @book %>
+    <table class="table" id="product" >
+    <%= f.fields_for :pictures, :wrapper => false do |f| %>
+      <tr class="fields">
+        <td> <%= image_tag f.object.url, width: "100" %></td>
+        <td> <%= f.input :url, as: :file %></td>
+        <td> <%= f.input :position, collection: [["封面",0],["轮播",1]], prompt: '图片类型'%></td>
+        <td style="vertical-align: middle;padding-top: 30px;"> <%= f.link_to_remove "-" %></td>
+      </tr>
+    <% end %>
+    </table>
+    <%= f.link_to_add "添加图片", :pictures, :data => { :target => "#product" }, class: "btn btn-success",style: "margin-bottom:10px;" %>
+    <%= f.input :online %>
+    <%= f.input :customeize_order %>
+    <div class="ln_solid"></div>
+
+    <div class="item form-group">
+      <div class="col-md-6 col-sm-6 offset-md-3">
+        <%= link_to t('buttons.back'), admin_books_path, class: 'btn btn-secondary' %>
+        <%= f.button :submit, class: 'btn btn-success' %>
+      </div>
+    </div>
+
+<% end %>
