@@ -1,10 +1,9 @@
 source 'https://gems.ruby-china.com'
-
-ruby '2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '~> 4.2', '>= 4.2.11.1'
+gem 'mysql2', '~> 0.4.10'
 # Use mysql as the database for Active Record
-gem 'mysql2', '~> 0.3.13', group: :production
+# gem 'mysql2', '~> 0.3.13', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
@@ -59,13 +58,13 @@ group :development do
 
 end
 group :development, :test do
-  gem "sqlite3", "~> 1.3.6"
+  # gem "sqlite3", "~> 1.3.6"
   gem 'pry-rails'
   gem 'pry-nav'
   gem 'guard-livereload'
   gem 'i18n-tasks', '~> 0.2.10'
 end
-gem 'gitlab'
+# gem 'gitlab'
 
 gem 'simple_form'
 gem "nested_form"
@@ -80,6 +79,6 @@ gem 'rails_kindeditor'
 gem 'ransack'
 gem "select2-rails"
 
-gem 'axlsx_rails'
+# gem 'axlsx_rails'
 
 gem 'httparty'
