@@ -46,11 +46,11 @@
                   <br>
                   <span style="font-size:14px">
                     <span style="line-height:2">
-                      <%= link_to '#' do %>
+                      <%= link_to corpvideo_index_path do %>
                         <span style="color:#D3D3D3">视频音频</span>
                       <% end -%>
                       <br>
-                      <%= link_to '#' do %>
+                      <%= link_to news_index_path do %>
                         <span style="color:#D3D3D3">精华文章</span>
                       <% end -%>
                       <br>
@@ -82,10 +82,10 @@
 
       <p>&nbsp;</p>
 
-<p><a href="/jiating.html"><span style="color:#D3D3D3"><span style="font-size:14px"><span style="font-family:微软雅黑">服务介绍</span></span></span></a></p>
+<p><%= link_to service_index_path do %><span style="color:#D3D3D3"><span style="font-size:14px"><span style="font-family:微软雅黑">服务介绍</span></span></span><%end%></p>
 
-<p><span style="line-height:2"><span style="font-size:14px"><a href="/intro/12.html"><span style="color:#D3D3D3">家长评语</span></a><br>
-<a href="/gexing.html"><span style="color:#D3D3D3">个性咨询</span></a></span></span><br>
+<p><span style="line-height:2"><span style="font-size:14px"><%= link_to commit_index_path do %><span style="color:#D3D3D3">家长评语</span><% end -%><br>
+<%= link_to qa_index_path do %><span style="color:#D3D3D3">个性咨询</span><%end%></span></span><br>
 &nbsp;</p>
-</div></div></div>         <div id="content_box-1571736128035-3" class="e_box e_box-000 d_gridCell_3 p_gridCell"><div id="w_common_text-1571736128050" class="reset_style"><div><p><a href="/contact.html"><strong><span style="color:#FFFFFF"><span style="line-height:1.4"><span style="font-size:16px"><span style="font-family:微软雅黑">联系方式</span></span></span></span></strong></a></p>
+</div></div></div>         <div id="content_box-1571736128035-3" class="e_box e_box-000 d_gridCell_3 p_gridCell"><div id="w_common_text-1571736128050" class="reset_style"><div><p><%= link_to contact_index_path do %><strong><span style="color:#FFFFFF"><span style="line-height:1.4"><span style="font-size:16px"><span style="font-family:微软雅黑">联系方式</span></span></span></span></strong><% end %></p>
 </div></div></div>       </div>  </div></div></div>       </div>  </div></div></div>       </div>  </div></div>
