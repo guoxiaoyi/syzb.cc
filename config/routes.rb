@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :corpvideo
   resources :news
   resources :contact
+  resources :service
+  resources :commit
 
 
 

@@ -1,3 +1,4 @@
+@CHARSET "UTF-8";
 *{
 	padding: 0;
 	margin: 0;
@@ -399,7 +400,7 @@ clear:left;
 /*w_grid-1571719344816*/@media only screen and (max-width: 1024px) and (min-width: 769px){
 }
 #w_grid-1571719401709 > div > .p_gridbox{
-background-image: asset-url('fbg.jpg');
+background-image:asset-url('fbg.jpg');
 }
 #w_grid-1571719401709 .p_MatteIcon .iconfont:before{
 content:'\e602';
