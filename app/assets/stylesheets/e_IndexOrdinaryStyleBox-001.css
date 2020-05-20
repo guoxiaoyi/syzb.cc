@@ -1,6 +1,6 @@
 .e_IndexOrdinaryStyleBox-001{
-width-and-width-uint:100%;
 /* autoprefixer: off */
+width-and-width-uint:100%;
 width-uint:%;
 /* autoprefixer: on */
 width:100%;
@@ -15,7 +15,10 @@ color:rgba(101,190,186,1);
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_top{
 background-color:rgba(214, 0, 0, 1);
-width-and-width-uint:auto;
+/* autoprefixer: off */
+  width-and-width-uint:auto;
+
+/* autoprefixer: on */
 width:auto;
 height:40px;
 height-and-height-uint:40px;
@@ -62,8 +65,10 @@ width:auto;
 font-size:0px;
 padding-right:15px;
 height:inherit;
+/* autoprefixer: off */
 width-and-width-uint:auto;
 height-and-height-uint:inherit;
+/* autoprefixer: on */
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_link{
 color:#666666;
