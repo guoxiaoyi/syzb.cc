@@ -28,8 +28,7 @@
               </div>
             </li>
             <li class="dropdown">
-              <a class="navNameLink" href="/jiating.html">家庭服务</a>
-
+              <%= link_to "家庭服务", service_index_path, class: "navNameLink" %>
               <div class="dropdown_menu">
                 <%= link_to "服务介绍", service_index_path, class: "navNameLink" %>
                 <%= link_to "家长评语", commit_index_path, class: "navNameLink" %>
@@ -66,16 +65,16 @@
           </div>
         </li>
         <li class="dropdown">
-          <%= link_to "家庭服务", root_path, class: "navNameLink" %>
+          <%= link_to "家庭服务", service_index_path, class: "navNameLink" %>
           <i class="iconfont jt">&#xe6ae;</i>
           <div class="dropdown_menu">
-            <%= link_to "服务介绍", root_path, class: "navNameLink" %>
-            <%= link_to "家长评语", root_path, class: "navNameLink" %>
-            <%= link_to "个性咨询", root_path, class: "navNameLink" %>
+            <%= link_to "服务介绍", service_index_path, class: "navNameLink" %>
+            <%= link_to "家长评语", commit_index_path, class: "navNameLink" %>
+            <%= link_to "个性咨询", qa_index_path, class: "navNameLink" %>
           </div>
         </li>
         <li class="dropdown">
-          <%= link_to "出版书籍", root_path, class: "navNameLink" %>
+          <%= link_to "联系我们", contact_index_path, class: "navNameLink" %>
         </li>
       </ul>
     </div>
