@@ -1,0 +1,91 @@
+.e_SideMajorStyleBox-001{
+height:auto;
+width:100%;
+}
+.e_SideMajorStyleBox-001 .stylebox_top{
+height:100px;
+width:auto;
+background-image-part-image:url(/img/ny03.jpg);
+background-color:rgba(101, 190, 186, 0);
+background-image:url(/img/ny03.jpg);
+}
+.e_SideMajorStyleBox-001 .title_icon{
+vertical-align:middle;
+line-height:40px;
+margin-right:10px;
+color:rgba(255,255,255,1);
+font-size:medium;
+display:inline-block;
+}
+.e_SideMajorStyleBox-001 .title_icon::before{
+content:"";
+}
+.e_SideMajorStyleBox-001 .title_main{
+vertical-align:middle;
+line-height:80px;
+color:rgba(255,255,255,1);
+max-width:600px;
+font-size:22px;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+display:inline-block;
+font-weight:normal;
+}
+.e_SideMajorStyleBox-001 .title_sub{
+vertical-align:middle;
+line-height:40px;
+color:rgba(255,255,255,1);
+font-size:14px;
+margin-left:10px;
+display:inline-block;
+font-weight:normal;
+}
+.e_SideMajorStyleBox-001 .stylebox_title{
+padding-left:15px;
+padding-right:15px;
+vertical-align:bottom;
+height:inherit;
+width:auto;
+font-size:0px;
+background-color:rgba(101, 190, 186, 0);
+white-space:nowrap;
+display:inline-block;
+}
+.e_SideMajorStyleBox-001 .stylebox_link{
+vertical-align:middle;
+margin-right:15px;
+height:inherit;
+color:#666666;
+font-size:14px;
+display:table;
+border-width:0px;
+float:right;
+}
+.e_SideMajorStyleBox-001 .stylebox_link a{
+vertical-align:middle;
+color:inherit;
+display:table-cell;
+}
+.e_SideMajorStyleBox-001 .link_icon{
+margin-left:5px;
+display:inline-block;
+}
+.e_SideMajorStyleBox-001 .link_icon::before{
+content:'\e6af';
+}
+.e_SideMajorStyleBox-001 .stylebox_top_line{
+height:1px;
+background-color:rgba(240,240,240,1);
+}
+.e_SideMajorStyleBox-001 .stylebox_content{
+height:calc(100% - 48px);
+width:100%;
+border-style:solid;
+border-color:#f0f0f0;
+border-width:1px;
+}
+.e_SideMajorStyleBox-001 .stylebox_bottom_line{
+height:1px;
+background-color:rgba(240,240,240,1);
+}

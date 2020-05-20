@@ -1,0 +1,2058 @@
+@media only screen and (max-width: 768px){/*小屏*/ 
+.c_portalResVideo_list-01001 .borderB_dividers ,.c_portalResVideo_list-01001 .border_default{
+	border: none;
+}
+.c_portalResVideo_list-01001 .h5{
+	margin: 0
+}
+.c_portalResVideo_list-01001 .p_categorySummaryBox {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+}
+.c_portalResVideo_list-01001 .p_categoryTitle {
+}
+.c_portalResVideo_list-01001 .p_categorySummary {
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-all;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+.c_portalResVideo_list-01001 .p_succ{
+	width: auto;
+	height: auto;
+	min-width: 255px;
+	min-height: 113px;
+	max-width: 500px;  
+    background-color:#F7FBFB;
+    border: 2px solid #65beba;
+    font-size: 22px;
+    position: absolute;
+    z-index: 9999999999;
+}
+.c_portalResVideo_list-01001 .p_succ .iconfont{
+	height: auto;
+	color: #A2D465;
+	margin-right:20px;
+	display: inline-block;
+    margin-left: 40px;
+}
+.c_portalResVideo_list-01001 .p_succ .iconfont:before{
+	content: "\e648";
+}
+.c_portalResVideo_list-01001 .p_succ .fontbox{
+	display: inline-block;
+	vertical-align:top;
+	max-width: 386px;
+	margin-right: 20px;
+}
+.c_portalResVideo_list-01001 .p_succ .promptbox{
+	width: auto;
+	height: auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.c_portalResVideo_list-01001 .p_succ .assistfont{
+	display: none;
+}
+.c_portalResVideo_list-01001 .p_succ .closebtn {
+	display: none;
+}
+.c_portalResVideo_list-01001 .p_fail{
+	width: auto;
+	height: auto;
+	min-width: 255px;
+	min-height: 113px;  
+	max-width: 500px;
+    background-color:#FDFCF3;
+    border: 2px solid #FFDC90;
+    font-size: 22px;
+    position: absolute;
+    z-index: 99999999999;
+}
+.c_portalResVideo_list-01001 .p_fail .iconfont{
+	height: auto;
+	color: #FF0000;
+	margin-right:20px;
+	display: inline-block;
+	margin-left: 40px;
+}
+.c_portalResVideo_list-01001 .p_fail .iconfont:before{
+	content: "\e641";
+}
+.c_portalResVideo_list-01001 .p_fail .fontbox{
+	display: inline-block;
+	vertical-align:top;
+	max-width: 386px;
+	margin-right: 20px;
+}
+.c_portalResVideo_list-01001 .p_fail .promptbox{
+	width: auto;
+	height: auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.c_portalResVideo_list-01001 .p_fail .assistfont{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+.c_portalResVideo_list-01001 .p_fail .closebtn {
+    font-size: 14px;
+    color: #65beba;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.c_portalResVideo_list-01001 .p_fail .closebtn:hover{
+	cursor: pointer;
+}.c_portalResVideo_list-01001 .p_PromptNoneData{
+  width: auto;
+  background-color: inherit;
+  text-align: center;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .iconfont:before {
+  content: "";
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .first{
+  height: auto;
+  display: table-cell;
+  font-size: 32px;
+  position: relative;
+  color: #09bb07;
+  vertical-align: middle;
+  padding: 0 10px 5px 0;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title{
+  display: inline-table;
+  padding: 0 30px;
+  min-height: 200px;
+  height: 100%;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .first:before{
+  content: "\e6b4";
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .font{
+  font-size: 18px;
+  display: table-cell;
+  line-height: normal;
+  vertical-align: middle;
+  color: rgba(51,51,51,1);
+  font-weight: bold;
+  text-align: left;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .promptbox{
+  width: auto;
+  height: 100%;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_content {
+  font-size: 14px;
+  color: rgba(105, 105, 105,1);
+  padding-left: 65px;
+}
+.c_portalResVideo_list-01001 .p_scroll{
+	width: 100%;
+  height: auto;
+  position: relative;
+}
+.c_portalResVideo_list-01001 .p_scroll .vline{
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #F0F0F0;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform:translate(0,-50%);
+  transform:translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling{
+  width: 77px;
+  height: 25px;
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #F2F2F3);
+  background: -o-linear-gradient(#fff , #F2F2F3); 
+  background: -moz-linear-gradient(#fff , #F2F2F3); 
+  background: linear-gradient(#fff , #F2F2F3);
+  border-radius: 6px;
+  position:relative;
+  left:50%;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 0 10px #fff inset,0 1px 1px rgba(0,0,0,0.1);
+  color: #AAAAAA;
+  cursor: pointer;
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling:hover{
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #F7F7F8);
+  background: -o-linear-gradient(#fff , #F7F7F8); 
+  background: -moz-linear-gradient(#fff , #F7F7F8); 
+  background: linear-gradient(#fff , #F7F7F8);
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling:active{
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #E4E4E4);
+  background: -o-linear-gradient(#fff , #E4E4E4); 
+  background: -moz-linear-gradient(#fff , #E4E4E4); 
+  background: linear-gradient(#fff , #E4E4E4);
+  box-shadow: 0 0 10px #fff inset,0 1px 2px rgba(0,0,0,0.1);
+}
+/*占位容器*/
+.c_portalResVideo_list-01001 .p_OccupyBox{
+	margin:0;
+	width: auto;
+    height:auto;
+    padding:0;
+    border:none;
+    overflow: hidden;
+}
+/*方形图片组符*/
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn{
+	display:inline-block;
+	height:10px;
+	width:100px;
+	padding:0;
+	background-color:rgba(228,228,228,1);
+	border-width:1px;
+	border-color:transparent;
+	color:rgba(153,153,153,1);
+	font-size: 12px;
+	font-family:"Microsoft YaHei";
+	text-align:center;
+	cursor:pointer;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn img{
+	display:none;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn .shape{		
+	text-indent:-9999em;
+	width:inherit;
+	height:inherit;
+	vertical-align:middle;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn:hover,
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn.active{
+	background-color:rgba(103,184,180,1);
+	color:rgba(255,255,255,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn.j-nav-active{
+	background-color:rgba(103,184,180,1);
+	color:rgba(255,255,255,1);
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonThumbnailBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonSummaryBoxA{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*纯图标切换按钮*/
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB{
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+	font-size:28px;
+	color:rgba(154,155,155,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB .iconfont:before{
+	content: "\e6b0";
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB:hover{
+	color:rgba(105,192,188,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB:hover{
+	cursor:pointer;
+}
+
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_KeywordContent{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*辅助字段名*/
+.c_portalResVideo_list-01001 .p_AssistNameD{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD .iconfont { margin:0 5px 0 0;}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_KeywordBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*普通短链接*/
+.e_title.c_portalResVideo_list-01001 .p_sort{
+	display:inline-block;
+	padding:0;
+	color:rgba(101, 190, 186,1);
+	font-size:14px;
+	text-align:left;
+}
+.e_title.c_portalResVideo_list-01001 .p_sort{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	cursor:pointer;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:active{
+	color:rgba(69, 165, 161,1);
+	font-weight:400;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:active{
+	text-decoration:none;
+	margin-top:0;
+}
+.e_title.c_portalResVideo_list-01001 .p_sort .iconfont:before{
+	display: inline-block;
+	content:"";
+}
+/*普通短链接*/
+.e_title.c_portalResVideo_list-01001 .p_linkB{
+	display:inline-block;
+	padding:0;
+	color:#707070;
+	font-size:14px;
+	text-align:left;
+}
+.e_title.c_portalResVideo_list-01001 .p_linkB{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	cursor:pointer;
+	color: #60a9d7;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:active{
+	color:#60a9d7;
+	font-weight:400;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:active{
+	text-decoration:none;
+	margin-top:0;
+}
+.e_title.c_portalResVideo_list-01001 .p_linkB .iconfont:before{
+	display: inline-block;
+	content:"";
+}
+/*辅助字段名*/
+.c_portalResVideo_list-01001 .p_AssistNameE{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_AssistNameE .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameE .iconfont { margin:0 5px 0 0;}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_FromBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+
+
+/*概要信息*/
+.c_portalResVideo_list-01001 .p_summary{
+	text-align:left;
+	vertical-align:top;
+	word-break:break-all;
+}/*普通字段名*/
+.c_portalResVideo_list-01001 .p_nameB{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	color:#666666;
+	font-size:14px;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_nameB .font{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+.c_portalResVideo_list-01001 .p_nameB .iconfont:before{
+	content:"";
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_SummaryBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    background-color:transparent;
+    overflow: hidden;
+}
+/*图片标题列表*/
+.c_portalResVideo_list-01001 .p_linkC{
+	display:block;
+	height:auto;
+	width:auto;
+	margin:0;
+	padding:0;
+	min-width:150px;
+	word-break:break-all;
+	white-space:normal;
+	font-weight: bold;
+	cursor:pointer;
+	line-height: 19px;
+}
+.c_portalResVideo_list-01001 .p_linkC:hover{
+	
+}
+.c_portalResVideo_list-01001 .p_linkC:active{
+	
+}
+
+/*名称标题容器*/
+.c_portalResVideo_list-01001 .p_header{
+	width:100%;
+	height:auto;
+	margin:10px 0 5px;
+    padding:0 5px;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+
+/*视频列表图片数*/
+.c_portalResVideo_list-01001 .p_num{
+	border-width:0;
+	display:inline-table;
+	float:left;
+	margin:0;
+	padding-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	color:#fff;
+	font-size:14px;
+    text-align:center;    
+	width:auto;
+    z-index:2;
+    white-space: nowrap;
+}
+/*视频列表图片数*/
+.c_portalResVideo_list-01001 .p_NumBox{
+	background: rgba(0, 0, 0 ,.7);
+	border-width:0;
+	display:inline-table;
+	text-align:center;
+	float:left;
+	margin:0;
+	padding-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+}
+/* 无效果图片边框 */
+
+.c_portalResVideo_list-01001 .p_thumbnail{
+	padding:0;
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+	overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_thumbnail:hover{
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+}
+.c_portalResVideo_list-01001 .p_thumbnail:active{
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+}.c_portalResVideo_list-01001 .p_MatteIcon{
+	margin:0;
+	width:inherit;
+	height:inherit;
+	color:rgba(102,102,102,1);
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont:before{
+    content: '\e6bd';
+    font-size: 50px;
+}
+.c_portalResVideo_list-01001 .p_Position{
+    width: inherit;
+    height: auto;
+    display: table-cell;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp; 
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    text-align: left;
+    vertical-align: middle;
+    display: none;
+}
+
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_images{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*视频列表容器*/
+
+.c_portalResVideo_list-01001 .p_articles{
+	width:230px;
+	height:320px;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_Video{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*纯图标切换按钮*/
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA{
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+	font-size:28px;
+	color:rgba(154,155,155,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA .iconfont:before{
+	content: "\e6b0";
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA:hover{
+	color:rgba(105,192,188,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA:hover{
+	cursor:pointer;
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonInteraction{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonLanternBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*主要内容区容器*/
+
+.c_portalResVideo_list-01001 .p_VideoList{
+	margin:0;
+	width: 880px;
+    height:auto;
+    padding:0;
+    border-width:1px;
+    border-style:none;
+    border-color:rgba(255, 255, 255,1);
+    white-space:nowrap;
+}
+/*视频列表组件*/
+.c_portalResVideo_list-01001{
+	overflow:hidden;
+}
+/*视频列表容器*/
+.c_portalResVideo_list-01001 .p_Video{
+	width:auto;
+	height:auto;
+	padding: 0 8px;
+}
+.c_portalResVideo_list-01001 .p_VideoList{
+	width:auto;
+	height:auto;
+	white-space: normal;
+	font-size: 0;
+	overflow: hidden;
+}
+/*内容列表区*/
+.c_portalResVideo_list-01001 .p_articles{
+	position:relative;
+	height:auto;
+	width:calc((100% - 20px)/2)!important;
+	margin: 5px;
+	display: inline-block;
+	vertical-align: top;
+}
+/*图片区*/
+.c_portalResVideo_list-04001 .p_imageBox{		
+	overflow: hidden;
+		
+	width: 100%;
+		
+	height: 100%;
+		
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.c_portalResVideo_list-01001 .p_images{
+	width:100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_images:hover{
+    background-color: rgba(186, 213, 211,.3);
+}
+.c_portalResVideo_list-01001 .p_thumbnail{
+	display:block;
+	height:100%;
+	width:100%;
+	text-align: center;
+	position: absolute;
+}
+.c_portalResVideo_list-01001 .p_thumbnail img{
+	width:inherit;
+	height:inherit;
+}
+/*遮罩*/
+.c_portalResVideo_list-01001 .p_articles:hover .p_thumbnail:after{
+	display:block;
+}
+.c_portalResVideo_list-01001 .p_CommonBtn{
+	display:none;
+	height:46px;
+	width:46px;
+	margin-left:-23px;
+	margin-top:-23px;
+	left:50%;
+	top:50%;
+	z-index:50;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_CommonBtn{
+	display:block;
+}
+/*p_num 图片数量*/
+.c_portalResVideo_list-01001 .p_NumBox{
+	display:table;
+	position:absolute;
+	bottom:12px;
+	right:12px;
+	height:auto;
+	width:auto;
+}
+
+/*概要信息*/
+.c_portalResVideo_list-01001 .p_SummaryBox{
+	height:auto;
+	margin-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	width:100%;
+	word-break:break-all;
+	white-space:normal;
+	overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_summary{
+	width:auto;
+	min-height: 26px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.c_portalResVideo_list-01001 .p_summary .js-adapMobile p{
+	line-height: 19px;
+}
+/*p_TimeBox 发布时间*/
+.c_portalResVideo_list-01001 .p_TimeBox{
+	margin:0 5px 10px;
+	width: auto;
+    height:auto;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_AssistNameC{
+	display:inline-block;
+    vertical-align: middle;    
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_time{
+	display:inline-block;
+	margin:0;
+	padding:0 5px 0 0;
+	vertical-align:middle; 
+	text-align:left;
+	white-space:nowrap;
+	overflow:visible;  
+}
+.c_portalResVideo_list-01001 .p_AssistNameC .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameC .iconfont{margin-right: 5px;}
+
+/*p_KeywordBox 关键词*/
+.c_portalResVideo_list-01001 .p_KeywordBox{
+	display:inline-block;
+	height:auto;
+	width:100%;
+	padding-left:5px;
+	padding-right:5px;
+	word-break:break-all;
+	white-space:normal;
+	margin-bottom: 10px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD{
+	display:inline-block;
+	float:left;
+	line-height:20px;
+}
+.c_portalResVideo_list-01001 .p_tag{
+	display:inline-block;
+	margin:0;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:5px;
+	padding-top:0px;	
+	text-align:left;
+    cursor: default;    
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+
+/*p_FromBox*/
+.c_portalResVideo_list-01001 .p_FromBox{
+	margin-bottom:10px;
+	width:auto;
+	height:auto;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 5px;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_sort .font{
+	line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_sort{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    display: block;
+    font-size: 12px;
+    overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_linkB{
+	-moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    width: auto;
+    overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_page {
+	display: inline-block !important;
+    right: 30px;
+}
+.c_portalResVideo_list-01001 .p_KeywordContent{
+    width: auto;
+    height: auto;
+}
+/*移上动画*/
+.c_portalResVideo_list-01001 .p_articles:hover .p_matteA{
+	display: block;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_Position{
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_matte{
+	display: block;
+}
+.c_portalResVideo_list-01001 .p_MatteIcon{
+	width: auto;
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_MatteIcon:before{
+	content: "";
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont{
+	font-size: 20px;
+	color: rgba(255,255,255,.8);
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont:before{
+	content: "\e602";
+}
+.c_portalResVideo_list-01001 .p_articles .p_matte:before {
+    content: "\200B";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*跑马灯*/
+.c_portalResVideo_list-01001 .p_CommonLanternBox{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 45px;
+	color: #e5e5e5;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA .iconfont:before{
+	content: "\e687";
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB{
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-size: 45px;
+	color: #e5e5e5;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB .iconfont:before{
+	content: "\e6ae";
+}
+.c_portalResVideo_list-01001 .p_CommonSummaryBoxA{
+	width: auto;
+    height: auto;
+    /* position: relative; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.c_portalResVideo_list-01001 .p_CommonThumbnailBox{
+	width: auto;
+	height: auto;
+}
+.c_portalResVideo_list-01001 .d_CommonInteractionA{
+	left: 0px;
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .d_CommonInteractionB{
+	right: 0px;
+	width: 60px;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn{
+	width: 100px;
+	height: 10px;
+	margin: 0px 8px;
+}
+/*跑马灯 结束*/
+/**滚动加载*/
+.c_portalResVideo_list-01001 .p_more {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 70px;
+    background-color: #F6F7F8;
+    position: relative;
+    border-radius: 0;
+    border-width: 0;
+    color: rgba(115, 115, 131, 1);
+    font-size: 18px;
+}
+/**显示滚动条*/
+.c_portalResVideo_list-01001 .p_scroll {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.c_portalResVideo_list-01001 .p_scroll .vline {
+    width: 100%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #F0F0F0;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling {
+    width: 77px;
+    height: 25px;
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #F2F2F3);
+    background: -o-linear-gradient(#fff, #F2F2F3);
+    background: -moz-linear-gradient(#fff, #F2F2F3);
+    background: linear-gradient(#fff, #F2F2F3);
+    border-radius: 6px;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0 0 10px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    color: #AAA;
+    cursor: pointer
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling:hover {
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #F7F7F8);
+    background: -o-linear-gradient(#fff, #F7F7F8);
+    background: -moz-linear-gradient(#fff, #F7F7F8);
+    background: linear-gradient(#fff, #F7F7F8)
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling:active {
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #E4E4E4);
+    background: -o-linear-gradient(#fff, #E4E4E4);
+    background: -moz-linear-gradient(#fff, #E4E4E4);
+    background: linear-gradient(#fff, #E4E4E4);
+    box-shadow: 0 0 10px #fff inset, 0 1px 2px rgba(0, 0, 0, .1)
+}
+/**显示滚动条*/
+}
+
+@media only screen and (min-width: 769px){/*大屏*/
+.c_portalResVideo_list-01001 .background_form{
+	background: #fff;
+}
+.c_portalResVideo_list-01001 .h5{
+	margin: 0
+}
+.c_portalResVideo_list-01001 .p_categorySummaryBox {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+}
+.c_portalResVideo_list-01001 .p_categoryTitle {
+}
+.c_portalResVideo_list-01001 .p_categorySummary {
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    word-break: break-all;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+.c_portalResVideo_list-01001 .p_succ{
+	width: auto;
+	height: auto;
+	min-width: 255px;
+	min-height: 113px;
+	max-width: 500px;  
+    background-color:#F7FBFB;
+    border: 2px solid #65beba;
+    font-size: 22px;
+    position: absolute;
+    z-index: 9999999999;
+}
+.c_portalResVideo_list-01001 .p_succ .iconfont{
+	height: auto;
+	color: #A2D465;
+	margin-right:20px;
+	display: inline-block;
+    margin-left: 40px;
+}
+.c_portalResVideo_list-01001 .p_succ .iconfont:before{
+	content: "\e648";
+}
+.c_portalResVideo_list-01001 .p_succ .fontbox{
+	display: inline-block;
+	vertical-align:top;
+	max-width: 386px;
+	margin-right: 20px;
+}
+.c_portalResVideo_list-01001 .p_succ .promptbox{
+	width: auto;
+	height: auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.c_portalResVideo_list-01001 .p_succ .assistfont{
+	display: none;
+}
+.c_portalResVideo_list-01001 .p_succ .closebtn {
+	display: none;
+}
+.c_portalResVideo_list-01001 .p_fail{
+	width: auto;
+	height: auto;
+	min-width: 255px;
+	min-height: 113px;  
+	max-width: 500px;
+    background-color:#FDFCF3;
+    border: 2px solid #FFDC90;
+    font-size: 22px;
+    position: absolute;
+    z-index: 99999999999;
+}
+.c_portalResVideo_list-01001 .p_fail .iconfont{
+	height: auto;
+	color: #FF0000;
+	margin-right:20px;
+	display: inline-block;
+	margin-left: 40px;
+}
+.c_portalResVideo_list-01001 .p_fail .iconfont:before{
+	content: "\e641";
+}
+.c_portalResVideo_list-01001 .p_fail .fontbox{
+	display: inline-block;
+	vertical-align:top;
+	max-width: 386px;
+	margin-right: 20px;
+}
+.c_portalResVideo_list-01001 .p_fail .promptbox{
+	width: auto;
+	height: auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.c_portalResVideo_list-01001 .p_fail .assistfont{
+    font-size: 14px;
+    color: #999999;
+    margin-top: 5px;
+}
+.c_portalResVideo_list-01001 .p_fail .closebtn {
+    font-size: 14px;
+    color: #65beba;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.c_portalResVideo_list-01001 .p_fail .closebtn:hover{
+	cursor: pointer;
+}.c_portalResVideo_list-01001 .p_PromptNoneData{
+  width: auto;
+  background-color: inherit;
+  text-align: center;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .iconfont:before {
+  content: "";
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .first{
+  height: auto;
+  display: table-cell;
+  font-size: 32px;
+  position: relative;
+  color: #09bb07;
+  vertical-align: middle;
+  padding: 0 10px 5px 0;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title{
+  display: inline-table;
+  padding: 0 30px;
+  min-height: 200px;
+  height: 100%;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .first:before{
+  content: "\e6b4";
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_title .font{
+  font-size: 18px;
+  display: table-cell;
+  line-height: normal;
+  vertical-align: middle;
+  color: rgba(51,51,51,1);
+  font-weight: bold;
+  text-align: left;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .promptbox{
+  width: auto;
+  height: 100%;
+}
+.c_portalResVideo_list-01001 .p_PromptNoneData .prompt_content {
+  font-size: 14px;
+  color: rgba(105, 105, 105,1);
+  padding-left: 65px;
+}
+.c_portalResVideo_list-01001 .p_scroll{
+	width: 100%;
+  height: auto;
+  position: relative;
+}
+.c_portalResVideo_list-01001 .p_scroll .vline{
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #F0F0F0;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  -webkit-transform:translate(0,-50%);
+  transform:translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling{
+  width: 77px;
+  height: 25px;
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #F2F2F3);
+  background: -o-linear-gradient(#fff , #F2F2F3); 
+  background: -moz-linear-gradient(#fff , #F2F2F3); 
+  background: linear-gradient(#fff , #F2F2F3);
+  border-radius: 6px;
+  position:relative;
+  left:50%;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 0 10px #fff inset,0 1px 1px rgba(0,0,0,0.1);
+  color: #AAAAAA;
+  cursor: pointer;
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling:hover{
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #F7F7F8);
+  background: -o-linear-gradient(#fff , #F7F7F8); 
+  background: -moz-linear-gradient(#fff , #F7F7F8); 
+  background: linear-gradient(#fff , #F7F7F8);
+}
+.c_portalResVideo_list-01001 .p_scroll .scrolling:active{
+  border: 1px solid #BABABB;
+  background: -webkit-linear-gradient(#fff , #E4E4E4);
+  background: -o-linear-gradient(#fff , #E4E4E4); 
+  background: -moz-linear-gradient(#fff , #E4E4E4); 
+  background: linear-gradient(#fff , #E4E4E4);
+  box-shadow: 0 0 10px #fff inset,0 1px 2px rgba(0,0,0,0.1);
+}
+/*占位容器*/
+.c_portalResVideo_list-01001 .p_OccupyBox{
+	margin:0;
+	width: auto;
+    height:auto;
+    padding:0;
+    border:none;
+    overflow: hidden;
+}
+/*方形图片组符*/
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn{
+	display:inline-block;
+	height:10px;
+	width:100px;
+	padding:0;
+	background-color:rgba(228,228,228,1);
+	border-width:1px;
+	border-color:transparent;
+	color:rgba(153,153,153,1);
+	font-size: 12px;
+	font-family:"Microsoft YaHei";
+	text-align:center;
+	cursor:pointer;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn img{
+	display:none;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn .shape{		
+	text-indent:-9999em;
+	width:inherit;
+	height:inherit;
+	vertical-align:middle;
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn:hover,
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn.active{
+	background-color:rgba(103,184,180,1);
+	color:rgba(255,255,255,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn.j-nav-active{
+	background-color:rgba(103,184,180,1);
+	color:rgba(255,255,255,1);
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonThumbnailBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonSummaryBoxA{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*纯图标切换按钮*/
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB{
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+	font-size:28px;
+	color:rgba(154,155,155,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB .iconfont:before{
+	content: "\e6b0";
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB:hover{
+	color:rgba(105,192,188,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB:hover{
+	cursor:pointer;
+}
+
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_KeywordContent{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*辅助字段名*/
+.c_portalResVideo_list-01001 .p_AssistNameD{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD .iconfont { margin:0 5px 0 0;}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_KeywordBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*普通短链接*/
+.e_title.c_portalResVideo_list-01001 .p_sort{
+	display:inline-block;
+	padding:0;
+	color:rgba(101, 190, 186,1);
+	font-size:14px;
+	text-align:left;
+}
+.e_title.c_portalResVideo_list-01001 .p_sort{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	cursor:pointer;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:active{
+	color:rgba(69, 165, 161,1);
+	font-weight:400;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_sort:active{
+	text-decoration:none;
+	margin-top:0;
+}
+.e_title.c_portalResVideo_list-01001 .p_sort .iconfont:before{
+	display: inline-block;
+	content:"";
+}
+/*普通短链接*/
+.e_title.c_portalResVideo_list-01001 .p_linkB{
+	display:inline-block;
+	padding:0;
+	color:#707070;
+	font-size:14px;
+	text-align:left;
+}
+.e_title.c_portalResVideo_list-01001 .p_linkB{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	cursor:pointer;
+	color: #60a9d7;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:active{
+	color:#60a9d7;
+	font-weight:400;
+}
+a>.e_title.c_portalResVideo_list-01001 .p_linkB:active{
+	text-decoration:none;
+	margin-top:0;
+}
+.e_title.c_portalResVideo_list-01001 .p_linkB .iconfont:before{
+	display: inline-block;
+	content:"";
+}
+/*辅助字段名*/
+.c_portalResVideo_list-01001 .p_AssistNameE{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_AssistNameE .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameE .iconfont { margin:0 5px 0 0;}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_FromBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+
+
+/*概要信息*/
+.c_portalResVideo_list-01001 .p_summary{
+	text-align:left;
+	vertical-align:top;
+	word-break:break-all;
+}/*普通字段名*/
+.c_portalResVideo_list-01001 .p_nameB{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	color:#666666;
+	font-size:14px;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_nameB .font{
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+.c_portalResVideo_list-01001 .p_nameB .iconfont:before{
+	content:"";
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_SummaryBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    background-color:transparent;
+    overflow: hidden;
+}
+/*图片标题列表*/
+.c_portalResVideo_list-01001 .p_linkC{
+	display:block;
+	height:auto;
+	width:auto;
+	margin:0;
+	padding:0;
+	min-width:150px;
+	word-break:break-all;
+	white-space:normal;
+	font-weight: bold;
+	cursor:pointer;
+	line-height: 19px;
+}
+.c_portalResVideo_list-01001 .p_linkC:hover{
+	
+}
+.c_portalResVideo_list-01001 .p_linkC:active{
+	
+}
+
+/*名称标题容器*/
+.c_portalResVideo_list-01001 .p_header{
+	width:100%;
+	height:auto;
+	margin:10px 0 5px;
+    padding:0 14px;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+
+/*视频列表图片数*/
+.c_portalResVideo_list-01001 .p_num{
+	border-width:0;
+	display:inline-table;
+	float:left;
+	margin:0;
+	padding-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+	color:#fff;
+	font-size:14px;
+    text-align:center;    
+	width:auto;
+    z-index:2;
+    white-space: nowrap;
+}
+/*视频列表图片数*/
+.c_portalResVideo_list-01001 .p_NumBox{
+	background: rgba(0, 0, 0 ,.7);
+	border-width:0;
+	display:inline-table;
+	text-align:center;
+	float:left;
+	margin:0;
+	padding-bottom:2px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:2px;
+}
+/* 无效果图片边框 */
+
+.c_portalResVideo_list-01001 .p_thumbnail{
+	padding:0;
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+	overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_thumbnail:hover{
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+}
+.c_portalResVideo_list-01001 .p_thumbnail:active{
+	border-width:1px;
+	border-style:none;
+	border-color:transparent;
+}.c_portalResVideo_list-01001 .p_MatteIcon{
+	margin:0;
+	width:inherit;
+	height:inherit;
+	color:rgba(102,102,102,1);
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont:before{
+    content: '\e6bd';
+    font-size: 50px;
+}
+.c_portalResVideo_list-01001 .p_Position{
+    width: inherit;
+    height: auto;
+    display: table-cell;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp; 
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    text-align: left;
+    vertical-align: middle;
+    display: none;
+}
+
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_images{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*视频列表容器*/
+
+.c_portalResVideo_list-01001 .p_articles{
+	width:230px;
+	height:320px;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_Video{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*纯图标切换按钮*/
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA{
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+	font-size:28px;
+	color:rgba(154,155,155,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA .iconfont:before{
+	content: "\e6b0";
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA:hover{
+	color:rgba(105,192,188,1);
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA:hover{
+	cursor:pointer;
+}/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonInteraction{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*无效果/分组*/
+
+.c_portalResVideo_list-01001 .p_CommonLanternBox{
+	margin:0;
+	width: 236px;
+    height:317px;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+/*主要内容区容器*/
+
+.c_portalResVideo_list-01001 .p_VideoList{
+	margin:0;
+	width: 880px;
+    height:auto;
+    padding:0;
+    border-width:1px;
+    border-style:none;
+    border-color:rgba(255, 255, 255,1);
+    background-color:transparent;
+    white-space:nowrap;
+}
+/*视频列表组件*/
+.c_portalResVideo_list-01001{
+	overflow:hidden;
+}
+/*视频列表容器*/
+.c_portalResVideo_list-01001 .p_Video{
+	width:auto;
+	height:auto;
+}
+.c_portalResVideo_list-01001 .p_VideoList{
+	width:auto;
+	height:auto;
+	padding:10px;
+	white-space: normal;
+	font-size: 0;
+	overflow: hidden;
+	background: transparent;
+}
+/*内容列表区*/
+.c_portalResVideo_list-01001 .p_articles{
+	position:relative;
+	height:auto;
+	width:calc((100% - 60px)/3);
+	margin: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+/*图片区*/
+.c_portalResVideo_list-04001 .p_imageBox{		
+	overflow: hidden;
+		
+	width: 100%;
+		
+	height: 100%;
+		
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.c_portalResVideo_list-01001 .p_images{
+	width:100%;
+    height: 0;
+    padding-bottom: 100%;
+    overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_images:hover{
+    background-color: rgba(186, 213, 211,.3);
+}
+.c_portalResVideo_list-01001 .p_thumbnail{
+	display:block;
+	height:100%;
+	width:100%;
+	text-align: center;
+	position: absolute;
+}
+.c_portalResVideo_list-01001 .p_thumbnail img{
+	width:inherit;
+	height:inherit;
+}
+/*遮罩*/
+.c_portalResVideo_list-01001 .p_articles:hover .p_thumbnail:after{
+	display:block;
+}
+.c_portalResVideo_list-01001 .p_CommonBtn{
+	display:none;
+	height:46px;
+	width:46px;
+	margin-left:-23px;
+	margin-top:-23px;
+	left:50%;
+	top:50%;
+	z-index:50;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_CommonBtn{
+	display:block;
+}
+/*p_num 图片数量*/
+.c_portalResVideo_list-01001 .p_NumBox{
+	display:table;
+	position:absolute;
+	bottom:12px;
+	right:12px;
+	height:auto;
+	width:auto;
+}
+
+/*概要信息*/
+.c_portalResVideo_list-01001 .p_SummaryBox{
+	height:auto;
+	margin-bottom:5px;
+	padding-left:14px;
+	padding-right:14px;
+	width:100%;
+	word-break:break-all;
+	white-space:normal;
+	overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_summary{
+	width:auto;
+	min-height: 26px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.c_portalResVideo_list-01001 .p_summary .js-adapMobile p{
+	line-height: 19px;
+}
+/*p_TimeBox 发布时间*/
+.c_portalResVideo_list-01001 .p_TimeBox{
+	margin:0 14px 10px;
+	width: auto;
+    height:auto;
+    padding:0;
+    border-width:1px;
+    border-style: none;
+    border-color:rgba(228,228,228,0);
+    background-color:transparent;
+    overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_AssistNameC{
+	display:inline-block;
+    vertical-align: middle;    
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+.c_portalResVideo_list-01001 .p_time{
+	display:inline-block;
+	margin:0;
+	padding:0 5px 0 0;
+	vertical-align:middle; 
+	text-align:left;
+	white-space:nowrap;
+	overflow:visible;  
+}
+.c_portalResVideo_list-01001 .p_AssistNameC .font{
+	vertical-align:middle;
+	white-space:nowrap;
+	width:inherit;
+	line-height: 16px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameC .iconfont{margin-right: 5px;}
+
+/*p_KeywordBox 关键词*/
+.c_portalResVideo_list-01001 .p_KeywordBox{
+	display:inline-block;
+	height:auto;
+	width:100%;
+	padding-left:14px;
+	padding-right:14px;
+	word-break:break-all;
+	white-space:normal;
+	margin-bottom: 10px;
+}
+.c_portalResVideo_list-01001 .p_AssistNameD{
+	display:inline-block;
+	float:left;
+	line-height:20px;
+}
+.c_portalResVideo_list-01001 .p_tag{
+	display:inline-block;
+	margin:0;
+	padding-bottom:0px;
+	padding-left:0px;
+	padding-right:5px;
+	padding-top:0px;	
+	text-align:left;
+    cursor: default;    
+	white-space:nowrap;
+	vertical-align:middle;
+	line-height: 19px;
+}
+
+/*p_FromBox*/
+.c_portalResVideo_list-01001 .p_FromBox{
+	margin-bottom:10px;
+	margin-left:14px;
+	width:auto;
+	height:auto;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_sort .font{
+	line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_sort{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    display: block;
+    font-size: 12px;
+    overflow:hidden;
+}
+.c_portalResVideo_list-01001 .p_FromBox .p_linkB{
+	-moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    width: auto;
+    overflow: hidden;
+}
+.c_portalResVideo_list-01001 .p_page {
+	display: inline-block !important;
+    right: 30px;
+}
+.c_portalResVideo_list-01001 .p_KeywordContent{
+    width: auto;
+    height: auto;
+}
+/*移上动画*/
+.c_portalResVideo_list-01001 .p_articles:hover .p_matteA{
+	display: block;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_Position{
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_articles:hover .p_matte{
+	display: block;
+}
+.c_portalResVideo_list-01001 .p_MatteIcon{
+	width: auto;
+	display: inline-block;
+}
+.c_portalResVideo_list-01001 .p_MatteIcon:before{
+	content: "";
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont{
+	font-size: 20px;
+	color: rgba(255,255,255,.8);
+}
+.c_portalResVideo_list-01001 .p_MatteIcon .iconfont:before{
+	content: "\e602";
+}
+.c_portalResVideo_list-01001 .p_articles .p_matte:before {
+    content: "\200B";
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*跑马灯*/
+.c_portalResVideo_list-01001 .p_CommonLanternBox{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 45px;
+	color: #e5e5e5;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnA .iconfont:before{
+	content: "\e687";
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB{
+	position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    font-size: 45px;
+	color: #e5e5e5;
+}
+.c_portalResVideo_list-01001 .p_CommonSwitchBtnB .iconfont:before{
+	content: "\e6ae";
+}
+.c_portalResVideo_list-01001 .p_CommonSummaryBoxA{
+	width: auto;
+    height: auto;
+    /* position: relative; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+.c_portalResVideo_list-01001 .p_CommonThumbnailBox{
+	width: auto;
+	height: auto;
+}
+.c_portalResVideo_list-01001 .d_CommonInteractionA{
+	left: 0px;
+    width: 60px;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .d_CommonInteractionB{
+	right: 0px;
+	width: 60px;
+    height: auto;
+    vertical-align: middle;
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.c_portalResVideo_list-01001 .p_CommonSquareNumBtn{
+	width: 100px;
+	height: 10px;
+	margin: 0px 8px;
+}
+/*跑马灯 结束*/
+/**滚动加载*/
+.c_portalResVideo_list-01001 .p_more {
+    position: static;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 70px;
+    background-color: #F6F7F8;
+    position: relative;
+    border-radius: 0;
+    border-width: 0;
+    color: rgba(115, 115, 131, 1);
+    font-size: 18px;
+}
+/**显示滚动条*/
+.c_portalResVideo_list-01001 .p_scroll {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+
+.c_portalResVideo_list-01001 .p_scroll .vline {
+    width: 100%;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #F0F0F0;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling {
+    width: 77px;
+    height: 25px;
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #F2F2F3);
+    background: -o-linear-gradient(#fff, #F2F2F3);
+    background: -moz-linear-gradient(#fff, #F2F2F3);
+    background: linear-gradient(#fff, #F2F2F3);
+    border-radius: 6px;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0 0 10px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    color: #AAA;
+    cursor: pointer
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling:hover {
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #F7F7F8);
+    background: -o-linear-gradient(#fff, #F7F7F8);
+    background: -moz-linear-gradient(#fff, #F7F7F8);
+    background: linear-gradient(#fff, #F7F7F8)
+}
+
+.c_portalResVideo_list-01001 .p_scroll .scrolling:active {
+    border: 1px solid #BABABB;
+    background: -webkit-linear-gradient(#fff, #E4E4E4);
+    background: -o-linear-gradient(#fff, #E4E4E4);
+    background: -moz-linear-gradient(#fff, #E4E4E4);
+    background: linear-gradient(#fff, #E4E4E4);
+    box-shadow: 0 0 10px #fff inset, 0 1px 2px rgba(0, 0, 0, .1)
+}
+/**显示滚动条*/
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px){/*中屏*/
+  
+}
