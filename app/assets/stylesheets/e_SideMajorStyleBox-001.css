@@ -3,7 +3,9 @@ height:auto;
 height-and-height-uint:auto;
 width-and-width-uint:100%;
 width:100%;
+/* autoprefixer: off */
 width-uint:%;
+/* autoprefixer: on */
 }
 .e_SideMajorStyleBox-001 .stylebox_top{
 height:100px;
@@ -92,7 +94,9 @@ width:100%;
 border-style:solid;
 border-color:#f0f0f0;
 border-width:1px;
+/* autoprefixer: off */
 width-uint:%;
+/* autoprefixer: on */
 }
 .e_SideMajorStyleBox-001 .stylebox_bottom_line{
 height:1px;

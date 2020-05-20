@@ -1,6 +1,8 @@
 .e_IndexOrdinaryStyleBox-001{
 width-and-width-uint:100%;
+/* autoprefixer: off */
 width-uint:%;
+/* autoprefixer: on */
 width:100%;
 height:auto;
 height-and-height-uint:auto;
@@ -90,7 +92,9 @@ background-color:rgba(240,240,240,1);
 height:1px;
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_content{
-width-uint:%;
+  /* autoprefixer: off */
+  width-uint:%;
+  /* autoprefixer: on */
 width:100%;
 border-color:#f0f0f0;
 border-width:1px;
