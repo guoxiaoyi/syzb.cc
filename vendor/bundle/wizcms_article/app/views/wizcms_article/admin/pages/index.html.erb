@@ -3,7 +3,6 @@
     <tr>
       <th><%= WizcmsArticle::Page.human_attribute_name(:title) %></th>
       <th><%= WizcmsArticle::Page.human_attribute_name(:cite_key) %></th>
-      <th><%= WizcmsArticle::Page.human_attribute_name(:parent_id) %></th>
       <th></th>
     </tr>
   </thead>
@@ -14,7 +13,6 @@
         <td><%= link_to page.title, [:admin, page] %></td>
         <!-- <td><%= page.published %></td> -->
         <td><%= page.cite_key %></td>
-        <td><%= page.parent_id %></td>
         <td>
           <%= link_to t('actions.edit'), edit_admin_page_path(page) %>
           <%= link_to t('actions.destroy'), [:admin, page], method: :delete, data: { confirm: '你确定吗?' } %>

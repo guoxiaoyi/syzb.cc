@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :books
   resources :corpvideo
   resources :news
+  resources :contact
 
 
 

@@ -4,14 +4,14 @@
     <%= f.input :title %>
     <%= f.input :author %>
     <%= f.input :article_category_id, collection: WizcmsArticle::ArticleCategory.all, prompt: "请选择类别"  %>
-    <%#= f.input :cite_key, hint: "引用key" %>
+    <%= f.input :cite_key, hint: "引用key" %>
     <%= f.input :hotspot %>
     <%= f.input :published %>
     <%= f.input :customeize_order %>
     <%= f.input :picture, label: "缩略图", hint: "图片尺寸：380*240    图片质量：50k"%>
 
     <%= image_tag f.object.picture, width: 100%>
-    <%#= f.input :published_at, as: :string, input_html: { class: 'datepicker'}  %>
+    <%= f.input :published_at, as: :string, input_html: { class: 'datepicker'}  %>
     <%= f.input :brief, as: :text %>
     <%= f.input :content, as: :kindeditor, input_html: {width: "100%", height: 300 }, editor_id: 'my_editor', owner: @article %>
     <div class="ln_solid"></div>

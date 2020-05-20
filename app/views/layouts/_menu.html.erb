@@ -7,55 +7,19 @@
                 <i class="fa fa-home"></i>首页
             <% end %>
         </li>
+
         <li>
-            <%= link_to main_app.admin_users_path do %>
-                <i class="fa fa-user"></i>用户管理
-            <% end %>
-        </li>
-        <li>
-            <a><i class="fa fa-gamepad"></i> 活动管理 <span class="fa fa-chevron-down"></span></a>
+            <a><i class="fa fa-gamepad"></i> 文章管理 <span class="fa fa-chevron-down"></span></a>
             <ul class="nav child_menu">
-                <li><%= link_to "活动分类", main_app.admin_activity_categories_path %></li>
-                <li><%= link_to "活动列表", main_app.admin_activities_path %></li>
-                <li><%= link_to "报道分类", wizcms_article.admin_article_categories_path %></li>
-                <li><%= link_to "报道列表", wizcms_article.admin_articles_path %></li>
-            </ul>
-        </li>
-        <li>
-            <a><i class="fa fa-area-chart"></i> 产品管理 <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><%= link_to "产品分类", main_app.admin_product_categories_path %></li>
-                <li><%= link_to "产品列表", main_app.admin_products_path %></li>
-            </ul>
-        </li>
-        <li>
-            <a><i class="fa fa-book"></i> 图书管理 <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><%= link_to "图书分类", main_app.admin_book_categories_path %></li>
-                <li><%= link_to "图书列表", main_app.admin_books_path %></li>
-            </ul>
-        </li>
-        <li>
-            <a><i class="fa fa-file-text"></i> 订单管理 <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><%= link_to "图书借阅", main_app.admin_book_orders_path %></li>
-                <li><%= link_to "产品订单", main_app.admin_product_orders_path %></li>
-            </ul>
-        </li>
-        <li>
-            <a><i class="fa fa-comments-o"></i> 兴趣吧 <span class="fa fa-chevron-down"></span></a>
-            <ul class="nav child_menu">
-                <li><%= link_to "板块", main_app.admin_nodes_path %></li>
-                <li><%= link_to "贴子", main_app.admin_topics_path %></li>
+                <li><%= link_to "文章分类", wizcms_article.admin_article_categories_path %></li>
+                <li><%= link_to "文章列表", wizcms_article.admin_articles_path %></li>
             </ul>
         </li>
 
-        <li> <%= link_to "分会管理", main_app.admin_managers_path %> </li>
+        <li><%= link_to "页面管理", wizcms_article.admin_pages_path %></li>
+
         <li> <%= link_to "链接分类", wizcms_link.admin_wizcms_link_categories_path %> </li>
         <li> <%= link_to "链接管理", wizcms_link.admin_links_path %> </li>
-        <li> <%= link_to "心得管理", main_app.admin_notes_path %> </li>
-        <li> <%= link_to "VIP等级管理", main_app.admin_vips_path %> </li>
-        <li> <%= link_to "捐赠管理", main_app.admin_donates_path %> </li>
 
     </ul>
     </div>
