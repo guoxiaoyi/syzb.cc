@@ -24,6 +24,7 @@ zh-cn:
       donate: 捐赠
       node: 板块
       topic: 帖子
+      person: 问答
     attributes:
       node:
         title: 标题
@@ -72,6 +73,13 @@ zh-cn:
         city: 城市
         district: 区/县
         expired_at: 会员过期时间
+      person:
+        name: 姓名
+        nianji: 年级
+        city: 城市
+        email: 邮箱
+        leixing: 问题类型
+        content: 留言内容
       note:
         title: 标题
         content: 内容

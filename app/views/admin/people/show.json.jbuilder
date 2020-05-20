@@ -1,0 +1,1 @@
+json.extract! @person, :name, :nianji, :city, :email, :leixing, :content, :created_at, :updated_at

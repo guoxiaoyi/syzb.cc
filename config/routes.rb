@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+
+  get 'shendu/index'
+
+  namespace :admin do
+    resources :people
+  end
   root 'home#index'
 
   resources :books
@@ -8,6 +14,7 @@ Rails.application.routes.draw do
   resources :contact
   resources :service
   resources :commit
+  resources :qa
 
 
 

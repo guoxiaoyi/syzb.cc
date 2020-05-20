@@ -36,7 +36,7 @@ module WizcmsLink
     # PATCH/PUT /admin/categories/1
     def update
       if @category.update(category_params)
-        redirect_to [:admin_wizcms_link,@category], notice: 'Category was successfully updated.'
+        redirect_to [:admin_wizcms_link, @category], notice: 'Category was successfully updated.'
       else
         render action: 'edit'
       end
@@ -45,7 +45,7 @@ module WizcmsLink
     # DELETE /admin/categories/1
     def destroy
       @category.destroy
-      redirect_to admin_categories_url, notice: 'Category was successfully destroyed.'
+      redirect_to admin_wizcms_link_categories_path, notice: 'Category was successfully destroyed.'
     end
 
     private

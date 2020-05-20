@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:name) %>:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:nianji) %>:</strong>
+  <%= @person.nianji %>
+</p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:city) %>:</strong>
+  <%= @person.city %>
+</p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:email) %>:</strong>
+  <%= @person.email %>
+</p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:leixing) %>:</strong>
+  <%= @person.leixing %>
+</p>
+
+<p>
+  <strong><%= Person.human_attribute_name(:content) %>:</strong>
+  <%= @person.content %>
+</p>
+
+<%= link_to t('buttons.edit'), edit_admin_person_path(@person) %> |
+<%= link_to t('buttons.back'), admin_people_path %>

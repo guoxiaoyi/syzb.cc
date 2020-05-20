@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200516075747) do
+ActiveRecord::Schema.define(version: 20200520194223) do
 
   create_table "activities", force: :cascade do |t|
     t.string   "title",             limit: 255
@@ -134,6 +134,17 @@ ActiveRecord::Schema.define(version: 20200516075747) do
   end
 
   add_index "orders", ["categoryable_type", "categoryable_id"], name: "index_orders_on_categoryable_type_and_categoryable_id", using: :btree
+
+  create_table "people", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "nianji",     limit: 255
+    t.string   "city",       limit: 255
+    t.string   "email",      limit: 255
+    t.string   "leixing",    limit: 255
+    t.text     "content",    limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "pictures", force: :cascade do |t|
     t.integer  "position",       limit: 4

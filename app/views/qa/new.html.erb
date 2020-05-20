@@ -1,0 +1,93 @@
+<div id="w_grid-1571719344816" class="w_grid-000" data-tmpleditable="editable"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571719344816-0" class="e_box e_box-000 d_gridCell_0 p_gridCell ND_empty" data-editablecontent="1571719344816"><div id="w_grid-1571728794901" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571728794901-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571728794911" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571728794911-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571728795001" class="reset_style"><div><p><span style="line-height:1.6"><span style="font-size:34px"><span style="font-family:微软雅黑"><span style="color:#FFFFFF"><strong>个性咨询</strong></span></span></span></span></p>
+</div></div></div>       </div>  </div></div></div>       </div>  </div></div><div id="w_grid-1571739989318" class="w_grid-000" data-vhide1024="true" data-vhide100p="true"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571739989318-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571739989323" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571739989323-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571739989327" class="reset_style"><div><p><span style="line-height:1.6"><span style="font-size:34px"><span style="font-family:微软雅黑"><span style="color:#FFFFFF"><strong>个性咨询</strong></span></span></span></span></p>
+</div></div></div>       </div>  </div></div></div>       </div>  </div></div><div id="w_grid-1571728794921" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571728794921-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571728890406" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571728890406-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571728909325" class="reset_style"><div><p style="text-align:center"><span style="color:#000000"><span style="font-size:36px"><span style="font-family:微软雅黑"><strong>简单提问</strong></span></span></span></p>
+</div></div><div id="w_grid-1571728924571" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571728924571-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571729140366" class="reset_style"><div><p><span style="color:#000000"><span style="font-size:14px"><span style="font-family:微软雅黑">该服务为便民项目，不收费，适合解答简单明了的问题。一个简单的测试：150字以内能够说清楚的问题。<br>
+超出林老师频道专业能力范围的，为了避免造成误导将会自动略过。回复周期为一周，答复会发到您的邮箱。</span></span></span></p>
+
+<p><span style="font-size:14px"><span style="font-family:微软雅黑"><span style="color:#000000">欲了解更多，请访问主菜单 “</span><%= link_to service_index_path do %><span style="color:#0000CD">家长评语</span><% end -%><span style="color:#000000">” 或 “</span><%= link_to qa_index_path do %><span style="color:#0000CD">个性咨询</span><% end -%><span style="color:#000000">”页面。</span></span></span></p>
+</div></div></div>       </div>  </div></div><div id="c_portalResMessage_form-15717289094006847" class="c_portalResMessage_form-01001" loaded="true">
+<div class="e_box p_inquiry" data-ename="填写留言表单">
+        <div class="e_wbox p_ConWBox" data-ename="弹窗内容容器">
+
+        <%= simple_form_for @person, url: qa_index_path, html: {class: "form-horizontal d_formItemBox p_productInfoForm"} do |f| %>
+          <%= f.error_notification %>
+          <div class="e_box p_ContactInfo">
+            <div class="e_box form-group p_FullNameBox">
+              <%= f.label :name, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :name, class: "InputText form-control" %>
+              </div>
+            </div>
+            <div class="e_box form-group p_FullNameBox">
+              <%= f.label :nianji, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :nianji, class: "InputText form-control" %>
+              </div>
+            </div>
+            <div class="e_box form-group p_FullNameBox">
+              <%= f.label :city, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :city, class: "InputText form-control" %>
+              </div>
+            </div>
+            <div class="e_box form-group p_FullNameBox">
+              <%= f.label :email, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :email, class: "InputText form-control" %>
+              </div>
+            </div>
+            <div class="e_box form-group p_FullNameBox">
+              <%= f.label :leixing, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :leixing, class: "InputText form-control" %>
+              </div>
+            </div>
+            <div class="e_box form-group p_groupBox" data-ename="多行文本容器">
+
+              <%= f.label :content, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
+
+              <div class="e_input p_FullName" style="margin-left: 10px;">
+                <%= f.text_field :content, class: "InputText form-control" %>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="e_wbox p_CoupWBox" style="margin-left: 12px;">
+            <%= f.button :submit, "提交", class: "btn btn-primary submitPC p_submit"  %>
+              <!-- <button type="button" class="" data-ename="提交按钮"></button> -->
+          </div>
+
+
+
+        <% end %>
+
+    </div>
+    <!--弹窗内容容器 结束-->
+        </div>
+<script type="text/javascript">
+    $comp({
+        CorrectRequired: "请正确填写必填项数据！",
+        DataFailed: "提交数据失败！",
+        mp: " 不能为空",
+        number: " 只能输入数字",
+        captchasErrorPrompt: "您输入的验证码有误，或已失效。",
+        correct: " 请输入正确的",
+        correctG: " 请输入正确格式的",
+        hm: " 号码",
+        id: "portalResMessage_form-15717289094006847",
+        lib: ["js/portalMessage/portalResMessage_form-01"],
+        noDataFlag: "",
+        success: "提交成功",
+        submitRepeat: " 1分钟内无法重复提交",
+        submitError: " 暂时无法正常提交，请您稍后再试",
+        submitUrl: "",
+        submitTarget: "",
+        selectId: "4",
+    })
+</script>
+</div></div>       </div>  </div></div></div>       </div>  </div></div></div>       </div>  </div></div>
