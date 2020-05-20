@@ -1,3 +1,4 @@
+@CHARSET "UTF-8";
 *{
 	padding: 0;
 	margin: 0;
@@ -1095,7 +1096,7 @@ content:'\e602';
 animation-fill-mode:both;
 }
 #w_grid-1571734708541 > div > .p_gridbox{
-background-image:url(/img/b1nr.png);
+background-image: url('/assets/pool601/b1nr.png');
 }
 #w_grid-1571734708541 .p_MatteIcon .iconfont:before{
 content:'\e602';
@@ -1223,7 +1224,7 @@ margin-left:0;
 clear:left;
 }
 #w_grid-1571671794780 > div > .p_gridbox{
-background-image:url(/img/aboutbg.jpg);
+background-image: url("/assets/pool601/aboutbg.jpg");
 }
 #w_grid-1571671794780 .p_MatteIcon .iconfont:before{
 content:'\e602';
@@ -1301,7 +1302,7 @@ content:'\e602';
 animation-fill-mode:both;
 }
 #w_grid-1571671809447 > div > .p_gridbox{
-background-image:url(/img/nbg.jpg);
+background-image: url("/assets/pool601/nbg.jpg");
 }
 #w_grid-1571671809447 .p_MatteIcon .iconfont:before{
 content:'\e602';
@@ -1455,7 +1456,7 @@ animation-fill-mode:both;
 border-radius:16px;
 }
 #w_grid-1571671814413 > div > .p_gridbox{
-background-image:url(/img/fbg.jpg);
+background-image:url("/assets/pool601/fbg.jpg");
 }
 #w_grid-1571671814413 .p_MatteIcon .iconfont:before{
 content:'\e602';

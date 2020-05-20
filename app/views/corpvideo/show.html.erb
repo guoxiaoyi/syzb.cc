@@ -34,15 +34,32 @@
     </div>
     <div class="e_box p_aHrefPageBox clearFloat" data-ename="上一条下一条">
         <div class="e_box p_s_page fl" data-ename="上一条">
-            <span class="sPage"><span class="i_sPage">上一条</span><i class="mosign">：</i></span>
-                        <span class="p_no"><span class="i_no">无</span></span>
-                    </div>
+            <span class="sPage">
+                <span class="i_sPage">上一条</span><i class="mosign">：</i>
+            </span>
+            <% if @video.previous.nil? %>
+              <span class="p_no"><span class="i_no">无</span> </span>
+            <% else %>
+              <%= link_to news_path(@video.previous.id) do%>
+                <span><%= @video.previous.title %></span>
+              <% end -%>
+            <% end -%>
+        </div>
         <div class="e_box p_x_page fr" data-ename="下一条">
-            <span class="xPage"><span class="i_xPage">下一条</span><i class="mosign">：</i></span>
-                        <a href="/corpvideo/4.html">
-                <span>留学最根本的风险</span>
-            </a>
-                    </div>
+            <span class="xPage">
+                <span class="i_xPage">下一条</span> <i class="mosign">：</i>
+            </span>
+
+            <% if @video.next.nil? %>
+              <span class="p_no"><span class="i_no">无</span> </span>
+            <% else %>
+              <%= link_to news_path(@video.next.id) do%>
+                <span><%= @video.next.title %></span>
+              <% end -%>
+            <% end -%>
+
+
+        </div>
     </div>
 </div>
 

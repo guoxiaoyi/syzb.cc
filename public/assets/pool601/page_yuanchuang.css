@@ -76,7 +76,7 @@ animation-fill-mode:both;
   padding-bottom:0px;
 }
 #w_grid-1571719655669 > div > .p_gridbox{
-  background: asset-url('se_banner_2.jpg');
+  background: url('/assets/pool061/se_banner_2.jpg');
 }
 #w_grid-1571719655669 .p_MatteIcon .iconfont:before{
 content:'\e602';
@@ -120,7 +120,7 @@ clear:left;
 /*w_grid-1571719736126*/@media only screen and (max-width: 1024px) and (min-width: 769px){
 }
 #w_grid-1571739693743 > div > .p_gridbox{
-background-image: asset-url('se_banner_2.jpg');
+background-image: url('/assets/pool061/se_banner_2.jpg');
 }
 #w_grid-1571739693743 .p_MatteIcon .iconfont:before{
 content:'\e602';
