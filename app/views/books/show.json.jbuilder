@@ -1,1 +1,0 @@
-json.extract! @book, :name,  :detail, :online, :brief, :price, :stock

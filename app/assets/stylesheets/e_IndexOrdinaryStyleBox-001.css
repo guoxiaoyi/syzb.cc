@@ -1,0 +1,103 @@
+.e_IndexOrdinaryStyleBox-001{
+width-and-width-uint:100%;
+width-uint:%;
+width:100%;
+height:auto;
+height-and-height-uint:auto;
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_link:hover{
+color:rgba(101,190,186,1);
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_link:active{
+color:rgba(101,190,186,1);
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_top{
+background-color:rgba(214, 0, 0, 1);
+width-and-width-uint:auto;
+width:auto;
+height:40px;
+height-and-height-uint:40px;
+}
+.e_IndexOrdinaryStyleBox-001 .title_icon{
+color:rgba(255,255,255,1);
+display:inline-block;
+vertical-align:middle;
+font-size:medium;
+line-height:40px;
+margin-right:10px;
+}
+.e_IndexOrdinaryStyleBox-001 .title_icon::before{
+content:"";
+}
+.e_IndexOrdinaryStyleBox-001 .title_main{
+overflow:hidden;
+max-width:600px;
+color:rgba(255,255,255,1);
+white-space:nowrap;
+font-weight:normal;
+display:inline-block;
+vertical-align:middle;
+font-size:16px;
+line-height:40px;
+text-overflow:ellipsis;
+}
+.e_IndexOrdinaryStyleBox-001 .title_sub{
+margin-left:10px;
+color:rgba(255,255,255,1);
+font-weight:normal;
+display:inline-block;
+vertical-align:middle;
+font-size:14px;
+line-height:40px;
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_title{
+background-color:rgba(101, 190, 186, 1);
+white-space:nowrap;
+padding-left:15px;
+display:inline-block;
+vertical-align:bottom;
+width:auto;
+font-size:0px;
+padding-right:15px;
+height:inherit;
+width-and-width-uint:auto;
+height-and-height-uint:inherit;
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_link{
+color:#666666;
+display:table;
+vertical-align:middle;
+font-size:14px;
+border-width:0px;
+float:right;
+height:inherit;
+margin-right:15px;
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_link a{
+color:inherit;
+display:table-cell;
+vertical-align:middle;
+}
+.e_IndexOrdinaryStyleBox-001 .link_icon{
+margin-left:5px;
+display:inline-block;
+}
+.e_IndexOrdinaryStyleBox-001 .link_icon::before{
+content:'\e6af';
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_top_line{
+background-color:rgba(240,240,240,1);
+height:1px;
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_content{
+width-uint:%;
+width:100%;
+border-color:#f0f0f0;
+border-width:1px;
+border-style:solid;
+height:calc(100% - 48px);
+}
+.e_IndexOrdinaryStyleBox-001 .stylebox_bottom_line{
+background-color:rgba(240,240,240,1);
+height:1px;
+}

@@ -1,0 +1,143 @@
+<div id="w_grid-1571719344816" class="w_grid-000" data-tmpleditable="editable">
+  <div class="w_grid signal">
+    <div class="e_box e_box-000 p_gridbox">
+      <div id="content_box-1571719344816-0" class="e_box e_box-000 d_gridCell_0 p_gridCell ND_empty" data-editablecontent="1571719344816">
+        <div id="w_grid-1571724347641" class="w_grid-000">
+          <div class="w_grid signal">
+            <div class="e_box e_box-000 p_gridbox">
+              <div id="content_box-1571724347641-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                <div id="w_grid-1571724347651" class="w_grid-000">
+                  <div class="w_grid signal">
+                    <div class="e_box e_box-000 p_gridbox">
+                      <div id="content_box-1571724347651-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                        <div id="w_common_text-1571724347691" class="reset_style">
+                          <div>
+                            <p style="text-align: right;">
+                              <span style="font-size:34px">
+                                <span style="font-family:微软雅黑">
+                                  <span style="color:#FFFFFF"><strong>精华文章</strong></span>
+                                </span>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w_grid-1571739788773" class="w_grid-000" data-vhide1024="true" data-vhide100p="true">
+          <div class="w_grid signal">
+            <div class="e_box e_box-000 p_gridbox">
+              <div id="content_box-1571739788773-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                <div id="w_grid-1571739788778" class="w_grid-000">
+                  <div class="w_grid signal">
+                    <div class="e_box e_box-000 p_gridbox">
+                      <div id="content_box-1571739788778-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                        <div id="w_common_text-1571739788782" class="reset_style">
+                          <div>
+                            <p style="text-align:right">
+                              <span style="line-height:1.7">
+                                <span style="font-size:34px">
+                                  <span style="font-family:微软雅黑">
+                                    <span style="color:#FFFFFF">
+                                      <strong>精华文章</strong>
+                                    </span>
+                                  </span>
+                                </span>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="w_grid-1571724347661" class="w_grid-000">
+          <div class="w_grid signal">
+            <div class="e_box e_box-000 p_gridbox">
+              <div id="content_box-1571724347661-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                <div id="c_portalResNews_category-15724831077076700" class="c_portalResNews_category-01001003" loaded="true">
+
+<div class="NavList_a1 default-style slide-menu swiper-container swiper-container-horizontal swiper-container-free-mode" id="NavList_a1">
+  <ul class="clearfix swiper-wrapper">
+      <% @article_categories.children.each do |category|%>
+        <li class="swiper-slide swiper-no-swiping">
+          <%= link_to category.name, news_index_path(cid: category.id), class: "more" -%>
+        </li>
+      <% end -%>
+    </ul>
+<div id="NavList_a1_menu-slide" class="menu-slide" style="width: 130px; height: 80px; left: 280.281px; top: 0px;"><i></i></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+<script>$("div[id^='c_']").attr("loaded","true")</script>
+</div></div>       </div>  </div></div>
+<div id="w_grid-1571724347681" class="w_grid-000">
+  <div class="w_grid signal">
+    <div class="e_box e_box-000 p_gridbox">
+      <div id="content_box-1571724347681-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+        <div id="c_portalResNews_list-15717246233986014" class="c_portalResNews_list-01001" loaded="true">
+
+  <div>
+<div class="e_box p_Newslist" data-ename="资讯整体框架">
+  <div class="e_box p_news dialog" data-ename="资讯列表容器" isserverpaging="true">
+    <% @articles.each do |article|%>
+    <div class="e_box p_articles borderB_default" data-url="<%= news_path(article) -%>">
+      <div class="js_coverUrlTitle item_hide"><%= article.title -%></div>
+      <%= link_to news_path(article), class: "e_link" do %>
+        <div class="e_box p_images cut higher picture" style="width: 200px; height: 200px;">
+          <%= image_tag article.picture, class: "js_thumb" -%>
+        </div>
+      <% end -%>
+      <!--end-->
+      <!--右侧-->
+      <div class="e_box p_content" data-ename="资讯介绍信息区">
+        <div class="e_box p_header" data-ename="资讯标题容器">
+          <div class="e_box p_TitleBox" data-ename="标题区" style="max-width: 1024px;">
+            <%= link_to news_path(article) do %>
+              <h5 class="e_title p_title h5"></h5><%= article.title %>
+            <% end -%>
+          </div>
+          <!--标题end-->
+        </div>
+        <!--概况信息-->
+        <div class="e_box p_SummaryBox" data-ename="概要信息区">
+          <article class="e_article p_summary js-fixLed" data-ename="概要信息" style="overflow-wrap: break-word;"><%= article.brief %></article>
+        </div>
+        <!--概况信息end-->
+        <!--查看详情-->
+        <%= link_to "查看详情", news_path(article), class: "e_link p_ToDetail border_mr border_default" -%>
+        <!--查看详情end -->
+      </div>
+
+      <div class="e_box mP_SummaryBox" data-ename="概要信息区">
+        <article class="e_article p_summary" data-ename="概要信息"><%= article.brief %></article>
+      </div>
+    </div>
+    <div class="blank background_form"></div>
+    <% end %>
+  </div>
+
+  <div class="e_box e_OccupyBox-001 p_OccupyBox">
+    <div class="e_pagebox e_pagebox-000 p_page" style="display: none;">
+      <div class="pre">
+        <div class="font">
+          <i class="iconfont"></i><span class="i_pre">上一页</span>
+        </div>
+      </div>
+      <div class="pageNum active">1</div>
+        <div class="next">
+          <div class="font">
+            <i class="iconfont"></i><span class="i_next">下一页</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>       </div>  </div></div></div>       </div>  </div></div>

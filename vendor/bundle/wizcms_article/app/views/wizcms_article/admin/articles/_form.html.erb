@@ -3,11 +3,7 @@
 
     <%= f.input :title %>
     <%= f.input :author %>
-    <% if params[:id] == '5'%>
-        <%= f.input :article_category_id, collection: WizcmsArticle::ArticleCategory.where(id: 6), prompt: "请选择类别"  %>
-    <% else%>
-        <%= f.input :article_category_id, collection: @current_manager.wizcms_article_categories.root.first.children, prompt: "请选择类别"  %>
-    <% end -%>
+    <%= f.input :article_category_id, collection: WizcmsArticle::ArticleCategory.all, prompt: "请选择类别"  %>
     <%#= f.input :cite_key, hint: "引用key" %>
     <%= f.input :hotspot %>
     <%= f.input :published %>

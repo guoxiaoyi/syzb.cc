@@ -1,41 +1,12 @@
 Rails.application.routes.draw do
 
+  root 'home#index'
+
+  resources :books
+  resources :corpvideo
+  resources :news
 
 
-  defaults format: :json do
-    get 'share/index'
-    resources :users, only: [:show, :create, :update] do
-      put :update_info
-    end
-    resources :managers, only: [:index]
-    resources :activities, only: [:index, :show]
-    resources :activity_records
-    resources :books, only: [:index, :show] do
-      post :pick_up
-    end
-    resources :orders, only: [:create, :index]  do
-      post :callback
-    end
-    resources :vips, only: [:index]
-    resource :session
-    resources :nodes, only: [:index] do
-      resources :topics do
-        resources :replies
-      end
-    end
-    resources :products do
-      post :pick_up
-    end
-    resources :articles, only: [:show, :index]
-    get 'tabs/service'
-    get 'tabs/home'
-    get 'tabs/article'
-    resources :notes
-    resources :points_records, only: [:index]
-    resources :donates do
-      post :upload
-    end
-  end
 
 
 
@@ -46,7 +17,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

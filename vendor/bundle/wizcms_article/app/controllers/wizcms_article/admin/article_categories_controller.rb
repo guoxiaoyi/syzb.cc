@@ -8,7 +8,7 @@ module WizcmsArticle
     # GET /admin/article_categories.json
     def index
       # @article_categories = ArticleCategory.all
-      @article_categories = current_manager.wizcms_article_categories.tree.first.children
+      @article_categories = ArticleCategory.tree
     end
 
     # GET /admin/article_categories/1
@@ -28,7 +28,7 @@ module WizcmsArticle
     # POST /admin/article_categories
     # POST /admin/article_categories.json
     def create
-      @article_category = ArticleCategory.new(article_category_params.merge(parent_id: current_manager.wizcms_article_categories.tree.first.id ))
+      @article_category = ArticleCategory.new(article_category_params)
 
       respond_to do |format|
         if @article_category.save

@@ -1,0 +1,117 @@
+<div id="w_grid-1571719328278" class="w_grid-000">
+  <div class="w_grid signal">
+    <div class="e_box e_box-000 p_gridbox">
+        <div id="content_box-1571719328278-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+          <div id="w_grid-1571719328285" class="w_grid-000">
+            <div class="w_grid ">
+              <div class="e_box e_box-000 p_gridbox">
+                <div id="content_box-1571719328285-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                  <div id="w_common_text-1571719328294" class="reset_style">
+                    <div>
+                      <p><span style="font-size:30px"><span style="color:#000000"><span style="font-family:微软雅黑"><strong>林老师频道</strong></span></span></span></p>
+</div></div><div id="w_common_text-1571719328297" class="reset_style"><div><p><span style="font-size:14px"><span style="font-family:微软雅黑">为您解答在其他地方找不到答案的问题</span></span></p>
+</div></div></div>         <div id="content_box-1571719328285-1" class="e_box e_box-000 d_gridCell_1 p_gridCell"><div id="w_grid-1571719328290" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571719328290-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="c_portalResnav_main-15717193057051373" class="c_portalResnav_main-01001"> <input type="hidden" class="nav_main_navId" value="&amp;navId=1&amp;compId=portalResnav_main-15717193057051373">
+
+  <!-- 导航 -->
+    <header class="header">
+      <div class="container clearfix">
+        <div class="nav">
+          <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="dropdown"> <%= link_to "首页", root_path, class: "navNameLink" %> </li>
+            <li class="dropdown">
+              <%= link_to "原创作品", book_path('mybook'), class: "navNameLink" %>
+
+              <div class="dropdown_menu">
+                <%= link_to "视频音频", corpvideo_index_path, class: "navNameLink" %>
+                <%= link_to "精华文章", news_index_path, class: "navNameLink" %>
+                <%= link_to "出版书籍", book_path('mybook'), class: "navNameLink" %>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a class="navNameLink" href="/jiating.html">家庭服务</a>
+
+              <div class="dropdown_menu">
+                <%= link_to "服务介绍", root_path, class: "navNameLink" %>
+                <%= link_to "家长评语", root_path, class: "navNameLink" %>
+                <%= link_to "个性咨询", root_path, class: "navNameLink" %>
+              </div>
+            </li>
+            <li class="dropdown">
+              <%= link_to "联系我们", root_path, class: "navNameLink" %>
+            </li>
+          </ul>
+        </div>
+        <a href="javascript:void(0)" id="navToggle">
+          <span></span>
+        </a>
+      </div>
+    </header>
+
+<!--移动端的导航-->
+    <div class="m_nav">
+      <div class="top clearfix">
+        <i class="iconfont closed">&#xe6d3;</i>
+      </div>
+      <ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+        <li class="dropdown">
+          <%= link_to "首页", root_path, class: "navNameLink" %>
+        </li>
+        <li class="dropdown">
+          <%= link_to "原创作品", book_path('mybook'), class: "navNameLink" %>
+          <i class="iconfont jt">&#xe6ae;</i>
+          <div class="dropdown_menu">
+            <%= link_to "视频音频", corpvideo_index_path, class: "navNameLink" %>
+            <%= link_to "精华文章", news_index_path, class: "navNameLink" %>
+            <%= link_to "出版书籍", book_path('mybook'), class: "navNameLink" %>
+          </div>
+        </li>
+        <li class="dropdown">
+          <%= link_to "家庭服务", root_path, class: "navNameLink" %>
+          <i class="iconfont jt">&#xe6ae;</i>
+          <div class="dropdown_menu">
+            <%= link_to "服务介绍", root_path, class: "navNameLink" %>
+            <%= link_to "家长评语", root_path, class: "navNameLink" %>
+            <%= link_to "个性咨询", root_path, class: "navNameLink" %>
+          </div>
+        </li>
+        <li class="dropdown">
+          <%= link_to "出版书籍", root_path, class: "navNameLink" %>
+        </li>
+      </ul>
+    </div>
+
+<script>
+      $(function () {
+        //超过一定高度导航添加类名
+        var nav = $("header"); //得到导航对象
+        var win = $(window); //得到窗口对象
+        var sc = $(document); //得到document文档对象。
+        win.scroll(function () {
+          if (sc.scrollTop() >= 100) {
+            nav.addClass("on");
+          } else {
+            nav.removeClass("on");
+          }
+        })
+
+        //移动端展开nav
+        $('#navToggle').on('click', function () {
+          $('.m_nav').addClass('open');
+        })
+        //关闭nav
+        $('.m_nav .top .closed').on('click', function () {
+          $('.m_nav').removeClass('open');
+        })
+
+        //二级导航  移动端
+        $(".m_nav .ul li").click(function () {
+
+          $(this).children("div.dropdown_menu").slideToggle('slow').end().find('.jt').toggleClass('jtRote');
+          $(this).siblings('li').children('.dropdown_menu').slideUp('slow').end().find('.jt').removeClass('jtRote');
+        });
+
+      })
+
+    </script>
+
+</div></div>       </div>  </div></div></div>       </div>  </div></div></div>       </div>  </div></div>

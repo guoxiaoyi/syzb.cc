@@ -2,16 +2,35 @@
 <html>
 <head>
   <meta charest="utf-8">
+  <title>林老师频道</title>
+  <meta name="keywords" content="林老师频道,林老师频道">
+  <meta name="description" content="林老师频道- ·留美小留学生，纽约市经济金融高中，17岁华尔街带薪实习 · 康奈尔大学双学士 · 哥伦比亚大学教育硕士 · 哈佛商学院学校管理&amp;领导力认证 · 畅销书作者">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+
+
+  <!-- <link href="/css/site_impt_r.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="/css/page_impt_homex.css" rel="stylesheet" type="text/css" /> -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name='viewport' content='width=1440' />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+  <![endif]-->
 </head>
-<!--[if lt IE 7]><body class="ie ie6 lte9 lte8 lte7"><![endif]-->
-<!--[if IE 7]><body class="ie ie7 lte9 lte8 lte7"><![endif]-->
-<!--[if IE 8]><body class="ie ie8 lte9 lte8"><![endif]-->
-<!--[if IE 9]><body class="ie ie9 lte9"><![endif]-->
-<!--[if !IE]><!--><body><!--<![endif]-->
-
-
-
-<%= yield %>
-
+<body>
+  <div class="main pagebox">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    <%= render 'layouts/header' %>
+  </div>
 </body>
 </html>

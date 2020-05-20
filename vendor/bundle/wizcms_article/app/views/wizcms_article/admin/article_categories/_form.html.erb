@@ -2,8 +2,8 @@
   <%= f.error_notification %>
     <%= f.input :name %>
     <%= f.input :custom_order %>
-    <%#= f.input :parent_id, collection: WizcmsArticle::ArticleCategory.tree.unshift(WizcmsArticle::ArticleCategoryRoot.new), label_method: :tree_select_name, prompt: "请选择父类别" %>
-    <%#= f.input :cite_key, hint: '用于引用 例如：case news inside_news'%>
+    <%= f.input :parent_id, collection: WizcmsArticle::ArticleCategory.tree.unshift(WizcmsArticle::ArticleCategoryRoot.new), label_method: :tree_select_name, prompt: "请选择父类别" %>
+    <%= f.input :cite_key, hint: '用于引用 例如：case news inside_news'%>
     <%#= f.input :brief %>
     <%#= f.input :published %>
     <div class="ln_solid"></div>

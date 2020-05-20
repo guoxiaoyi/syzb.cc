@@ -1,0 +1,52 @@
+<div id="w_grid-1571719344816" class="w_grid-000" data-tmpleditable="editable"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571719344816-0" class="e_box e_box-000 d_gridCell_0 p_gridCell ND_empty" data-editablecontent="1571719344816"><div id="w_grid-1571723706725" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571723706725-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571723706735" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571723706735-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571723706775" class="reset_style"><div><p><span style="line-height:1.6"><span style="font-size:34px"><span style="font-family:微软雅黑"><span style="color:#FFFFFF"><strong>视频音频</strong></span></span></span></span></p>
+</div></div></div>       </div>  </div></div></div>       </div>  </div></div><div id="w_grid-1571739727278" class="w_grid-000" data-vhide100p="true" data-vhide1024="true"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571739727278-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571739727282" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571739727282-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_common_text-1571739727287" class="reset_style"><div><p><span style="line-height:1.6"><span style="font-size:34px"><span style="font-family:微软雅黑"><span style="color:#FFFFFF"><strong>视频音频</strong></span></span></span></span></p>
+</div></div></div>       </div>  </div></div></div>       </div>  </div></div><div id="w_grid-1571723706765" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571723706765-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571724086931" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571724086931-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"><div id="w_grid-1571724145171" class="w_grid-000"><div class="w_grid signal">   <div class="e_box e_box-000 p_gridbox">         <div id="content_box-1571724145171-0" class="e_box e_box-000 d_gridCell_0 p_gridCell"></div>       </div>  </div></div><div id="c_portalResVideo_list-15717240644083063" class="c_portalResVideo_list-01001" loaded="true">
+<input type="hidden" class="vUrlParam" value="${data.vUrlParam}">
+
+<div class="e_box p_VideoList background_form">
+         <!--视频列表容器-->
+    <div class="e_box p_Video" isserverpaging="true">
+        <!--内容列表区-->
+
+        <% @videos.each do |video|%>
+        <div class="e_box p_articles 5  dialog" data-dismoveable="" data-foreachitem="">
+            <!--图片区-->
+
+            <%= link_to corpvideo_path(video), class: "e_link p_linkA" do %>
+              <%= image_tag video.picture, class: "vidiopic" -%>
+            <% end -%>
+
+            <!--普通标题-->
+            <div class="e_box p_header">
+              <%= link_to video.title, corpvideo_path(video), class: "headerLink" %>
+            </div>
+
+            <!--描述信息-->
+            <div class="e_box p_SummaryBox">
+                <article class="e_Article p_summary h5 color_normal borderB_dividers"></article>
+            </div>
+        </div>
+
+        <% end -%>
+    </div>
+
+    <!--  turnPage-翻页，hidden-隐藏， showMore-显示更多链接按钮，rollingLoad-滚动加载 -->
+    <div class="e_box e_OccupyBox-001 p_OccupyBox">
+      <div class="e_pagebox e_pagebox-000 p_page" style="display: none;">
+        <div class="pre">
+            <div class="font">
+              <i class="iconfont"></i><span class="i_pre">上一页</span>
+            </div>
+        </div>
+        <div class="pageNum active">1</div>
+        <div class="next">
+          <div class="font">
+            <i class="iconfont"></i><span class="i_next">下一页</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+</div>       </div>  </div></div></div>       </div>  </div></div></div>       </div>  </div></div>
