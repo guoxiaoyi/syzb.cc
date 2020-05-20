@@ -3,9 +3,6 @@
 /*	position: absolute;*/
 	width: 100%;
 	height: auto;
-	/* autoprefixer: off */
-	width-uint:%;
-	/* autoprefixer: on */
 }
 /*stylebox_link*/
 .e_FlowCommonStyleBox-001 .stylebox_link{
@@ -93,7 +90,6 @@
 	border-width: 1px;
 	border-color: #f0f0f0;
 	width: 100%;
-	width-uint:%;
 }
 .e_FlowCommonStyleBox-001 .stylebox_bottom_line{
 	height: 1px;

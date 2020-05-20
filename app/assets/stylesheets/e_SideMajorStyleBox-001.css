@@ -1,19 +1,9 @@
 .e_SideMajorStyleBox-001{
 height:auto;
 width:100%;
-/* autoprefixer: off */
-height-and-height-uint:auto;
-width-and-width-uint:100%;
-width-uint:%;
-/* autoprefixer: on */
 }
 .e_SideMajorStyleBox-001 .stylebox_top{
 height:100px;
-/* autoprefixer: off */
-height-and-height-uint:100px;
-width-and-width-uint:auto;
-width-and-height:custom;
-/* autoprefixer: on */
 width:auto;
 background-image-part-image:url(/img/ny03.jpg);
 background-color:rgba(101, 190, 186, 0);
@@ -61,10 +51,6 @@ font-size:0px;
 background-color:rgba(101, 190, 186, 0);
 white-space:nowrap;
 display:inline-block;
-/* autoprefixer: off */
-width-and-width-uint:auto;
-height-and-height-uint:inherit;
-/* autoprefixer: on */
 }
 .e_SideMajorStyleBox-001 .stylebox_link{
 vertical-align:middle;
@@ -98,9 +84,6 @@ width:100%;
 border-style:solid;
 border-color:#f0f0f0;
 border-width:1px;
-/* autoprefixer: off */
-width-uint:%;
-/* autoprefixer: on */
 }
 .e_SideMajorStyleBox-001 .stylebox_bottom_line{
 height:1px;

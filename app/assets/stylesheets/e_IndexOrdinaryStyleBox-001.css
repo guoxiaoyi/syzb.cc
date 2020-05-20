@@ -1,8 +1,4 @@
 .e_IndexOrdinaryStyleBox-001{
-/* autoprefixer: off */
-width-and-width-uint:100%;
-width-uint:%;
-/* autoprefixer: on */
 width:100%;
 height:auto;
 height-and-height-uint:auto;
@@ -15,10 +11,6 @@ color:rgba(101,190,186,1);
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_top{
 background-color:rgba(214, 0, 0, 1);
-/* autoprefixer: off */
-  width-and-width-uint:auto;
-
-/* autoprefixer: on */
 width:auto;
 height:40px;
 height-and-height-uint:40px;
@@ -65,10 +57,6 @@ width:auto;
 font-size:0px;
 padding-right:15px;
 height:inherit;
-/* autoprefixer: off */
-width-and-width-uint:auto;
-height-and-height-uint:inherit;
-/* autoprefixer: on */
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_link{
 color:#666666;
@@ -97,9 +85,6 @@ background-color:rgba(240,240,240,1);
 height:1px;
 }
 .e_IndexOrdinaryStyleBox-001 .stylebox_content{
-  /* autoprefixer: off */
-  width-uint:%;
-  /* autoprefixer: on */
 width:100%;
 border-color:#f0f0f0;
 border-width:1px;
