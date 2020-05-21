@@ -1,21 +1,9 @@
 <div id="w_carouselbox-1571734708523" class="w_carouselbox-001">
   <div class="w_carouselbox swiper-container-pc">
     <div class="swiper-wrapper">
-
-        <div class="swiper-slide" style="background-image: url('/assets/pool601/banner1.jpg');">
-          <div id="w_common_text-1571734708529" class="reset_style">
-            <div>
-              <h2 style="text-align: center;">
-                <span style="font-family:微软雅黑">
-                  <span style="font-size:40px">
-                    <span style="color:#FF0000"><strong>家庭服务</strong></span>
-                  </span>
-                </span>
-              </h2>
-            </div>
-          </div>
-        </div>
-
+      <% WizcmsLink::Category.get('desktop_swiper').links.each do |pp|%>
+        <div class="swiper-slide" style="background-image: url(<%= asset_path pp.image %>);"> </div>
+      <% end -%>
     </div>
     <div class="swiper-pagination swiper-pagination-h"></div>
     <i class="e_icon e_icon-000 toLeft"></i>
