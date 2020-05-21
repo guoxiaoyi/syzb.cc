@@ -1,17 +1,69 @@
 <div id="w_carouselbox-1571734708523" class="w_carouselbox-001">
   <div class="w_carouselbox swiper-container-pc">
     <div class="swiper-wrapper">
-      <% WizcmsLink::Category.get('desktop_swiper').links.each do |pp|%>
-        <div class="swiper-slide" style="background-image: url(<%= asset_path pp.image %>);"> </div>
-      <% end -%>
+      <%# WizcmsLink::Category.get('desktop_swiper').links.each do |pp|%>
+        <div class="swiper-slide" style="background-image: url('/assets/pool601/banner1.jpg');">
+          <div id="w_common_text-1571734708529" class="reset_style"><div>
+            <h2 style="text-align: center;"><span style="font-family:微软雅黑"><span style="font-size:40px"><span style="color:#FF0000"><strong>家庭服务</strong></span></span></span></h2>
+            </div>
+          </div>
+          <div id="w_common_text-1571734708539" class="reset_style"><div><p style="text-align: center;"><span style="font-size:16px"><span style="color:#000000"><span style="font-family:微软雅黑">为您解答在其他地方找不到答案的问题</span></span></span></p>
+            </div>
+          </div>
+
+
+          <div id="w_grid-1571734708541" class="w_grid-000">
+            <div class="w_grid signal">
+              <div class="e_box e_box-000 p_gridbox">
+                <div id="content_box-1571734708541-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                  <div id="c_portalResProduct_list-15717346861938842" class="c_portalResProduct_list-01001">
+                    <div class="proBox swiper-wrapper">
+                      <div class="proContainer p_products swiper-slide">
+                          <div class="proLi">
+                            <div class="proImgBox"><img src="/assets/pool601/vO393ttfQS2Dq2DUSrU8iQ.png"> </div>
+                          </div>
+                      </div>
+
+                      <div class="proContainer p_products swiper-slide">
+                          <div class="proLi">
+                            <div class="proImgBox"><img src="/assets/pool601/Oi65fYN0RrCzAYvYalr-UA.png"> </div>
+                          </div>
+                      </div>
+
+                      <div class="proContainer p_products swiper-slide">
+                          <div class="proLi">
+                            <div class="proImgBox"><img src="/assets/pool601/bH54VNShRqSFAXHmGiPPfQ.png"> </div>
+                          </div>
+                      </div>
+
+                      <div class="proContainer p_products swiper-slide">
+                          <div class="proLi">
+                            <div class="proImgBox"><img src="/assets/pool601/5FOQYM0qQNqGo4B_eWqrBg.png"> </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="e_box e_box-000 p_CommonSummaryBoxA"> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div id="w_fbtn-1571734708545" class="w_fbtn-001">
+            <div class="w_fbtn animated  "> <%= link_to service_index_path, class: "e_link e_link-001 p_link" do %> <div class="e_btn e_CommonBtn-001 p_CommonBtn">    <div class="font">了解更多</div>   </div>  <% end -%> </div>
+          </div>
+        </div>
+      <%# end -%>
     </div>
     <div class="swiper-pagination swiper-pagination-h"></div>
     <i class="e_icon e_icon-000 toLeft"></i>
     <i class="e_icon e_icon-000 toRight"></i>
   </div>
 </div>
-<style type="text/css">
 
+<style type="text/css">
   .swiper-container-pc .swiper-pagination{
     width: auto;
     height: 21px;
@@ -59,6 +111,26 @@
     background-position: center center;
     height: 600px;
   }
+  #c_portalResProduct_list-15717346861938842 .p_CommonSummaryBoxA {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    margin-bottom: 0;
+  }
+    #c_portalResProduct_list-15717346861938842 .p_CommonSummaryBoxA span.swiper-pagination-bullet{
+      width: 16px;
+      height: 16px;
+      margin: 0 8px;
+    }
+    #c_portalResProduct_list-15717346861938842 .p_CommonSummaryBoxA span.swiper-pagination-bullet-active{
+      background: #1890FF;
+    }
+  #c_portalResProduct_list-15717346861938842 .p_CommonSummaryBoxA  span{
+    background: rgba(228, 228, 228, 1);
+  }
+   .proLi{
+    margin: 0 auto !important;
+   }
 </style>
 <script type="text/javascript">
 
@@ -73,6 +145,14 @@
       nextEl: '.toLeft',
       prevEl: '.toRight',
     }
+  });
+  var swiperV = new Swiper('.c_portalResProduct_list-01001', {
+    spaceBetween: 50,
+    nested:true,
+    pagination: {
+      el: '.p_CommonSummaryBoxA',
+      clickable: true,
+    },
   });
 </script>
 
