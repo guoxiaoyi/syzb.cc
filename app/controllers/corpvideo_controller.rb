@@ -1,8 +1,8 @@
 class CorpvideoController < ApplicationController
   def index
-    @videos = WizcmsArticle::ArticleCategory.get(:video).get_articles
+    @videos = WizcmsLink::Category.get(:video).links
   end
   def show
-    @video = WizcmsArticle::Article.get( params[:id] )
+    @video = WizcmsLink::Link.find( params[:id] )
   end
 end
