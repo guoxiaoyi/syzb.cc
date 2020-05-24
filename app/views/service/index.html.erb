@@ -78,14 +78,15 @@
                         <div id="w_grid-1571726941001" class="w_grid-001">
                           <div class="w_grid ">
                             <div class="e_box e_box-000 p_gridbox">
-                              <div id="content_box-1571726941001-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
+                              <%= raw @page_2.try(:content)%>
+       <!--                        <div id="content_box-1571726941001-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
                                 <div id="w_common_text-1571726916595" class="reset_style">
                                   <div>
-                                    <%= raw @page_2.try(:content)%>
+
                                   </div>
                                 </div>
                               </div>
-                              <!-- <div id="content_box-1571726941001-1" class="e_box e_box-000 d_gridCell_1 p_gridCell">
+ -->                              <!-- <div id="content_box-1571726941001-1" class="e_box e_box-000 d_gridCell_1 p_gridCell">
                                 <div id="w_fimg-1571726971655" class="w_fimg-000">
                                   <div class="w_img animated  ">
                                     <div class="e_box e_box-000 p_box">
@@ -101,10 +102,11 @@
                         <div id="w_grid-1571727117597" class="w_grid-001">
                           <div class="w_grid ">
                             <div class="e_box e_box-000 p_gridbox">
+                              <%= raw @page_3.try(:content)%>
+
                               <div id="content_box-1571727117597-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
                                 <div id="w_common_text-1571727117603" class="reset_style">
                                   <div>
-                                    <%= raw @page_3.try(:content)%>
                                   </div>
                                 </div>
                               </div>
