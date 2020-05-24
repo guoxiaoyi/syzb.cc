@@ -13,3 +13,12 @@
 //= require swiper.min.js
 //= require jquery_ujs
 //
+$(document).ready(function() {
+  $(".e_box.p_problemCategory .e_btn.btn.p_btn-show").click(function(event) {
+    /* Act on the event */
+    $(".e_box.p_category").addClass('animate');
+  });
+  $(".e_btn.p_btn-hide.background_assist").click(function(){
+    $(".e_box.p_category").removeClass('animate');
+  })
+});
