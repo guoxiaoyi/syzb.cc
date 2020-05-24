@@ -32,19 +32,9 @@
 
     <!--  turnPage-翻页，hidden-隐藏， showMore-显示更多链接按钮，rollingLoad-滚动加载 -->
     <div class="e_box e_OccupyBox-001 p_OccupyBox">
-      <div class="e_pagebox e_pagebox-000 p_page" style="display: none;">
-        <div class="pre">
-            <div class="font">
-              <i class="iconfont"></i><span class="i_pre">上一页</span>
-            </div>
-        </div>
-        <div class="pageNum active">1</div>
-        <div class="next">
-          <div class="font">
-            <i class="iconfont"></i><span class="i_next">下一页</span>
-          </div>
-        </div>
-      </div>
+
+      <%= paginate @videos, theme: 'pool601' %>
+
     </div>
 </div>
 
