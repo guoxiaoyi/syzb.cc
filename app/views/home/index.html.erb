@@ -643,9 +643,25 @@
                             <div id="content_box-1571674316477-0" class="e_box e_box-000 d_gridCell_0 p_gridCell">
                               <div id="w_fvideo-1571674107259" class="w_fvideo-001">
                                 <div class="w_fvideo">
-                                  <video autoplay="" loop="" controls="" poster="" type="video/mp4" class="e_video e_video-000 p_video pause" webkit-playsinline="true" x-webkit-airplay="true" playsinline="true" x5-video-player-type="h5" x5-video-orientation="h5" x5-video-player-fullscreen="true">
-                                    <source src="https://v1.cecdn.site.cn/100085_1909245055/美国宽松教育的真相是什么.mp4" />
-                                    <source src="https://v1.cecdn.site.cn/100085_1909245055/美国宽松教育的真相是什么.mp4&quot;" /></video>
+                                  <% if !@video.nil? %>
+                                  <video
+                                      id="my-player"
+                                      class="video-js"
+                                      controls
+                                      preload="auto"
+                                      poster="<%= @video.image -%>"
+                                      data-setup='{}' class="e_video e_video-000 p_video pause">
+                                    <source src="<%= @video.url -%>" type="video/mp4"></source>
+                                    <p class="vjs-no-js">
+                                      <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                        不支持HTML Video
+                                      </a>
+                                    </p>
+                                  </video>
+                                  <script type="text/javascript">
+                                      var player = videojs('my-player');
+                                  </script>
+                                  <% end -%>
                                 </div>
                               </div>
                             </div>
