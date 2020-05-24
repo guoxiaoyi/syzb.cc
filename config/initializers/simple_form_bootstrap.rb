@@ -106,7 +106,7 @@ SimpleForm.setup do |config|
     b.optional :maxlength
     b.optional :minlength
     b.optional :readonly
-    b.use :label, class: 'col-form-label col-md-3 col-sm-3 label-align'
+    b.use :label, class: 'col-form-label col-md-1 col-sm-1 label-align'
     b.wrapper :grid_wrapper, tag: 'div', class: 'col-md-6 col-sm-6 ' do |ba|
       ba.use :input, class: 'form-control-file', error_class: 'parsley-error', valid_class: 'is-valid'
       ba.use :full_error, wrap_with: { tag: 'div', class: 'invalid-feedback d-block' }
