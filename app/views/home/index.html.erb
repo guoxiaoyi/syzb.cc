@@ -646,11 +646,11 @@
                                   <% if !@video.nil? %>
                                   <video
                                       id="my-player"
-                                      class="video-js e_video e_video-000 p_video pause"
+                                      class="video-js"
                                       controls
                                       preload="auto"
                                       poster="<%= @video.image -%>"
-                                      data-setup='{}'>
+                                      data-setup='{}' style="width: 100%;">
                                     <source src="<%= @video.url -%>" type="video/mp4"></source>
                                     <p class="vjs-no-js">
                                       <a href="https://videojs.com/html5-video-support/" target="_blank">
