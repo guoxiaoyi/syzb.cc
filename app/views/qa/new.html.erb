@@ -43,7 +43,7 @@
               <%= f.label :leixing, class: "e_title col-sm-2 control-label d_formItemTitle h5 color_normal p_intentionIntroTitle"%>
 
               <div class="e_input p_FullName" style="margin-left: 10px;">
-                <%= f.text_field :leixing, class: "InputText form-control" %>
+                <%= f.select :leixing, [['海外高中&国际学校', '1'], ['教育和养育', '2'], ['其他', '3']],  class: "InputText form-control", style: "width: 100%;" %>
               </div>
             </div>
             <div class="e_box form-group p_groupBox" data-ename="多行文本容器">
@@ -69,25 +69,30 @@
     </div>
     <!--弹窗内容容器 结束-->
         </div>
-<script type="text/javascript">
-    $comp({
-        CorrectRequired: "请正确填写必填项数据！",
-        DataFailed: "提交数据失败！",
-        mp: " 不能为空",
-        number: " 只能输入数字",
-        captchasErrorPrompt: "您输入的验证码有误，或已失效。",
-        correct: " 请输入正确的",
-        correctG: " 请输入正确格式的",
-        hm: " 号码",
-        id: "portalResMessage_form-15717289094006847",
-        lib: ["js/portalMessage/portalResMessage_form-01"],
-        noDataFlag: "",
-        success: "提交成功",
-        submitRepeat: " 1分钟内无法重复提交",
-        submitError: " 暂时无法正常提交，请您稍后再试",
-        submitUrl: "",
-        submitTarget: "",
-        selectId: "4",
-    })
-</script>
+
 </div></div>       </div>  </div></div></div>       </div>  </div></div></div>       </div>  </div></div>
+<style type="text/css">
+  .e_input.p_FullName select{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #7b7b7b;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    width: 80%;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+</style>
