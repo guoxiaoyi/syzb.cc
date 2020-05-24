@@ -31,13 +31,18 @@
                   <div id="c_portalResProduct_list-15717346861938842" class="c_portalResProduct_list-01001 selfswiper">
                     <div class="e_box e_box-000 p_CommonInteraction p1 d_CommonInteractionA"><div class="e_SwitchBtn e_IconSwitchBtn-002 p_CommonSwitchBtnA j-previous" data-slider="4"><div class="font"><i class="iconfont"></i></div></div></div>
                     <div class="proBox swiper-wrapper">
-                      <div class="proContainer p_products swiper-slide">
-                          <div class="proLi">
-                            <div class="proImgBox">
-                              <img src="/assets/pool601/vO393ttfQS2Dq2DUSrU8iQ.png">
+
+                      <% WizcmsLink::Category.get('desktop_swiper_1').links.each do |pp|%>
+                        <div class="proContainer p_products swiper-slide">
+                            <div class="proLi">
+                              <div class="proImgBox">
+                                <%= image_tag pp.image %>
+                              </div>
                             </div>
-                          </div>
-                      </div>
+                        </div>
+                      <% end -%>
+<!--
+
 
                       <div class="proContainer p_products swiper-slide">
                           <div class="proLi">
@@ -62,7 +67,7 @@
                             </div>
                           </div>
                       </div>
-                    </div>
+ -->                    </div>
                     <div class="e_box e_box-000 p_CommonInteraction p2 d_CommonInteractionB"><div class="e_SwitchBtn e_IconSwitchBtn-002 p_CommonSwitchBtnB j-next" data-slider="2"><div class="font"><i class="iconfont"></i></div></div></div>
                     <div class="e_box e_box-000 p_CommonSummaryBoxA a"> </div>
                   </div>
@@ -137,16 +142,18 @@
                     <div class="e_box e_box-000 p_CommonInteraction p3 d_CommonInteractionA"><div class="e_SwitchBtn e_IconSwitchBtn-002 p_CommonSwitchBtnA j-previous" data-slider="4"><div class="font"><i class="iconfont"></i></div></div></div>
                     <div class="e_box e_box-000 p_CommonInteraction p4 d_CommonInteractionB"><div class="e_SwitchBtn e_IconSwitchBtn-002 p_CommonSwitchBtnB  j-next" data-slider="2"><div class="font"><i class="iconfont"></i></div></div></div>
                     <div class="proBox proBox2">
-                      <div class="proContainer p_products proBox2Slider">
-                        <div class="proLi ">
-                          <div class="proImgBox " style="text-align: center;">
-                            <img src="/assets/pool601/Im4MH0kESSilwPRHx2LL1Q.png" title='俞敏洪' class='proImg'
-                                    alt='俞敏洪' />
+                      <% WizcmsLink::Category.get('desktop_swiper_2').links.each do |pp|%>
+                        <div class="proContainer p_products proBox2Slider">
+                          <div class="proLi ">
+                            <div class="proImgBox " style="text-align: center;">
+                              <%= image_tag pp.image, class: "proImg" %>
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      <% end -%>
 
-                      <div class="proContainer p_products proBox2Slider">
+
+                      <!-- <div class="proContainer p_products proBox2Slider">
                         <div class="proLi ">
                           <div class="proImgBox " style="text-align: center;">
                             <img src="/assets/pool601/P3-EZy1iR7KLwh552KWkGw.png" title='俞敏洪' class='proImg'
@@ -162,7 +169,7 @@
                                     alt='俞敏洪' />
                           </div>
                         </div>
-                      </div>
+                      </div> -->
 
                     </div>
                     <div class="e_box e_OccupyBox-001 p_CommonSummaryBoxA b p_OccupyBox"> </div>
@@ -222,17 +229,22 @@
                     <!-- 产品常用结构 -->
 
                     <div class="proBox proBox3">
-                      <div class="proContainer p_products proBox3Slider">
-                        <div class="proLi">
-                          <!-- 图片 -->
-                          <div class="proImgBox" style="text-align: center;">
-                              <img src="/assets/pool601/dOR77VTuRwuNx1_RFpdDEg.png" title='纽约时报' class='proImg' alt='纽约时报' />
+
+                      <% WizcmsLink::Category.get('desktop_swiper_3').links.each do |pp|%>
+
+                        <div class="proContainer p_products proBox3Slider">
+                          <div class="proLi">
+                            <!-- 图片 -->
+                            <div class="proImgBox" style="text-align: center;">
+                                <%= image_tag pp.image, class: "proImg" %>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="proContainer p_products proBox3Slider">
+                      <% end -%>
+
+
+<!--                       <div class="proContainer p_products proBox3Slider">
                         <div class="proLi">
-                          <!-- 图片 -->
                           <div class="proImgBox" style="text-align: center;">
                               <img src="/assets/pool601/Iwsj_isqQoOr4s5hCUFjMA.png" title='纽约时报' class='proImg' alt='纽约时报' />
                           </div>
@@ -240,12 +252,11 @@
                       </div>
                       <div class="proContainer p_products proBox3Slider">
                         <div class="proLi">
-                          <!-- 图片 -->
                           <div class="proImgBox" style="text-align: center;">
                               <img src="/assets/pool601/0bqUWdVNSzeKKNpp5IKQwA.png" title='纽约时报' class='proImg' alt='纽约时报' />
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <!-- 分页 -->
                       <!-- 分页end -->
                     </div>
