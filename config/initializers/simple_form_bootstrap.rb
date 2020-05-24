@@ -151,7 +151,7 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
     b.use :label, class: 'col-form-label col-md-3 col-sm-3 label-align'
-    b.wrapper :grid_wrapper, tag: 'div', class: 'col-md-6 col-sm-6 ' do |ba|
+    b.wrapper :grid_wrapper, tag: 'div', class: 'col-md-9 col-sm-9 ' do |ba|
       ba.use :input, class: 'form-control', error_class: 'is-invalid parsley-error', valid_class: 'is-valid'
       ba.use :full_error, wrap_with: { tag: 'div', class: 'invalid-feedback' }
       ba.use :hint, wrap_with: { tag: 'small', class: 'form-text text-muted' }
