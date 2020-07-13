@@ -1,14 +1,14 @@
 # config valid only for Capistrano 3.1
 
-set :application, 'pool601'
-set :repo_url, 'git@github.com:guoxiaoyi/pool601.git'
+set :application, 'syzb'
+set :repo_url, 'git@github.com:guoxiaoyi/syzb.git'
 # set :port, 23
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/www/wwwroot/pool601.com'
+set :deploy_to, '/www/wwwroot/syzb.cc'
 
 # Default value for :scm is :git
 # set :scm, :git
