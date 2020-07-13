@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 
 set :application, 'syzb'
-set :repo_url, 'git@github.com:guoxiaoyi/syzb.git'
+set :repo_url, 'git@github.com:guoxiaoyi/syzb.cc.git'
 # set :port, 23
 
 # Default branch is :master
@@ -26,7 +26,7 @@ set :deploy_to, '/www/wwwroot/syzb.cc'
 set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/uploads public/assets public/uploadfile}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/uploads public/assets public/uploadfile}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
