@@ -1,0 +1,145 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+.1f_hongse{ color:#d90000 !important;}
+.f_lvse{ color:#008900 !important;}
+.f_moren {
+    color:#043df8  !important;
+}
+
+
+#header{ width:100%; height:60px; background:#f1ca2f; overflow:hidden; padding:10px; padding-top:0; margin:0 auto; position:fixed; z-index:99999999;}
+.logo{ float:left; display:inline-block; width:130px;overflow:hidden; margin-top:6px;}
+.logo img{ width:100%;}
+
+.header_div{ width:160px;overflow:hidden; text-align:right; overflow:hidden; font-size:12px; color:#000; margin-top:5px; height:48px; }
+.header_span{ float:left; width:21px; height:21px; display:inline-block;} 
+.header_span img{ width:21px;}
+.header_span2{ width:160px; font-size:16px; text-align:center; display:inline-block;}
+.header_span3{ display:inline-block; width:66px; overflow:hidden;text-align:center; padding-top:-2px;font-size:16px;} 
+.header_span img{ width:100%}
+
+
+.jinjia{ width:100%; overflow:hidden;margin:0 auto; padding-top:60px;}
+.jinjia_tab{ width:100%; text-align:center; overflow:hidden; border-bottom:1px solid #ccc;}
+.jinjia_tab th{ background:#f8e497; color:#000; font-size:16px; text-align:center; height:40px; line-height:40px;}
+.jinjia_tab .jinjia_tab_tr{ background:#ddd;}
+.jinjia_tab tr td{ height:50px;color:#0000FF; font-size:18px; overflow:hidden; border-right:1px solid #ccc;}
+.jinjia_tab_span1{ display:inline-block; width:100%; height:25px; border-bottom:1px solid #ccc; line-height:25px;}
+
+
+.jinjia_span{ display:inline-block; width:100%; line-height:18px; overflow:hidden; background:#ddd; color:#333; font-size:12px;  padding:10px 0 12px 10px; margin-bottom:15px;}
+
+
+
+
+.news{ width:100%; overflow:hidden;margin:0 auto; padding-top:82px;height:2969px}
+
+
+.bor_no{ border:0 !important;}
+
+
+
+.contact{ background:#ddd; padding:80px 0 0 0; overflow:hidden; width:100%;margin:0 auto;}
+
+.contact_div{ width:100%; background:#fff; overflow:hidden; padding:10px;}
+.contact_div h2{ font-size:20px; color:#f1ca2f; font-weight:bold; margin-bottom:5px;}
+.contact_div span{ display:block; font-size:14px; height:32px; line-height:32px;	}
+.contact_div i{ display:inline-block; width:18px; overflow:hidden; float:left; margin-right:5px;}
+.contact_div i img{ width:100%;}
+
+.contact_div2{ background:#fff; margin-top:20px; overflow:hidden; padding:20px 10px 0 10px;}
+.contact_div2 span{ display:block; height:40px; margin-bottom:20px;text-align:center;}
+.contact_div2 input{ width:97%; height:40px; color:#999; line-height:40px; border:1px solid #ccc;}
+.contact_div2 textarea{width:97%; color:#999; height:90px; border:1px solid #ccc; }
+
+.contact_div2 span.contact_div2_span2{ height:90px; text-align:center;}
+
+.contact_div2 span.contact_div2_span3{ height:50px; text-align:center;}
+.btn_tj{ width:90%; height:50px; line-height:50px; background:#f1ca2f; text-align:center; color:#fff; font-size:16px; border:0;}
+
+.contact_div3{ width:100%; overflow:hidden; padding:10px; background:#fff; }
+.contact_div3 img{ width:100%;}
+.contact{ background:#ddd; padding:80px 0 0 0; overflow:hidden; width:100%;margin:0 auto;}
+.lianxi_div3{width:100%; overflow:hidden; padding:10px; background:#fff;}
+
+
+.lianxi{background:#ddd; padding:80px 0 0 0; overflow:hidden; width:100%;margin:0 auto;}
+.lianxi_div1{width:100%; background:#fff; overflow:hidden; padding:10px;}
+.lianxi_div1 h2{ font-size:20px; color:#f1ca2f; font-weight:bold; margin-bottom:5px;}
+.lianxi_div1 span{ display:block; font-size:14px; height:32px; line-height:32px; float:left; width:100%;	}
+.lianxi_div1 i{ display:inline-block; width:18px; overflow:hidden; float:left; margin-right:5px;}
+.lianxi_div1 i img{ width:100%;}
+
+.lianxi_div2{background:#fff; margin-top:20px; overflow:hidden; padding:20px 10px 0 10px;}
+.lianxi_div2_ul{ overflow:hidden; width:100%; margin:0; padding:0;}
+.lianxi_div2_ul li{ width:100%;height:40px; margin-bottom:20px;text-align:center; list-style-type:none;}
+.lianxi_div2_ul li input{ width:70%; height:40px; color:#999; line-height:40px; border:1px solid #ccc;}
+.lianxi_div2_ul li textarea{width:70%; color:#999; height:90px; border:1px solid #ccc;}
+.lianxi_div2_ul li.lianxi_div2_ul_li{ height:90px;}
+.lianxi_div2_ul li.lianxi_div2_ul_li2{ height:50px;}
+
+.lianxi_div2_ul span{ float:left; display:inline-block; width:80px; height:40px; line-height:40px; text-align:right;}
+
+.lianxi_div3{width:100%; overflow:hidden; padding:10px; background:#fff; }
+.lianxi_div3 img{ width:100%;}
+
+
+.none{ display:none !important;}
+
+.news{ position:relative; width:100%; overflow:hidden; padding:82px 10px 0 0px;}
+#iframe{margin-top:-119px;}
+
+
+.footer{ width:100%; height:40px; background:#fff;margin:0 auto; opacity:1 !important;position:fixed; z-index:99999999; bottom:0;}
+.footer a{ display:inline-block; }
+
+.footer a.current{ background:#f1ca2f; color:#fff;}
+.footer a span{ display:block;}
+
+.foot_ul{ overflow:hidden; width:103%; padding:0; margin:0;}
+.foot_ul li{ background:#f8e497; float:left; width:33.3%; overflow:hidden; border-right:1px solid #ccc;color:#333; font-size:16px; text-align:center;} 
+.foot_ul li{ list-style-type:none;}
+.foot_ul li a{ color:#333; z-index:9999999999; opacity:1; width:100%; height:40px; line-height:40px;}
+.foot_ul li.current{background:#f1ca2f;}
+.foot_ul li.current a{  color:#000;}
+
+.shijian{padding-top:10px;}
+
+
+.jinjia_tab .f_lvse,.jinjia_tab .f_hongse{ font-size:22px;}
+.jinjia_tab .td_xiao .f_lvse,.jinjia_tab .td_xiao .f_hongse{font-size:14px; }
+.jinjia_tab .f_lvse,.jinjia_tab .f_moren{ font-size:22px;}
+
+
+.jinjia_tab_r1{ display:inline-block; width:35px; background:#f1ca2f; color:#000; font-size:18px; padding:4px 0 4px 0; }
+.mt_20{ border-top:1px solid #ccc;}
+
+
+
+
+.jinjia_span_l{ display:inline-block; width:100%; float:left; overflow:hidden;line-height:18px;}
+
+.jinjia_span_r{display:inline-block; width:30%; float:left; overflow:hidden; padding-top:3px; margin-top:2px;}
+.jinjia_span_r img{ width:100%;}
+
+.jinjia_tab_zg span{ font-size:16px !important;}
+
+
+.mb_20{ margin-bottom:35px !important;}
+
+.titletd {
+    background-color:#f1ca2f
+}
+
+
+
+
+
+
+
+
+
+

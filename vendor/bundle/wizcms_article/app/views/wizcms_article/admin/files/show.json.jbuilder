@@ -1,1 +1,0 @@
-json.extract! @file, :created_at, :updated_at

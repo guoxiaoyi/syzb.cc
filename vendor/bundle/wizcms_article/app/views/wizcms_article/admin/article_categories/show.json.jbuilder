@@ -1,1 +1,0 @@
-json.extract! @article_category, :name, :custom_order, :parent_id, :brief, :published, :created_at, :updated_at

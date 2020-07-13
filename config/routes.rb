@@ -1,27 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'api/get_price1'
 
-  get 'shendu/index'
+  get 'api/get_switch'
 
-  namespace :admin do
-    resources :people
-  end
   root 'home#index'
 
-  resources :books
-  resources :corpvideo
-  resources :news
-  resources :contact
-  resources :service
-  resources :commit
-  resources :qa
-
-
-
-
-
-
-
+  get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -76,43 +61,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  mount WizcmsArticle::Engine, :at => "/"
-  mount WizcmsLink::Engine, :at => "/"
-  namespace :admin do
-    get '/' => 'application#portal'
-
-    get '/login' => 'application#login'
-    post '/create_session' => 'application#create_session'
-    match '/destroy_session' => 'application#destroy_session', via: [:get,:post]
-
-
-    resources :managers
-    resources :users do
-      resources :points_records
-    end
-
-    resources :activity_categories
-    resources :activities
-
-    resources :product_categories
-    resources :products
-
-    resources :book_categories
-    resources :books
-
-    resources :book_orders
-    resources :product_orders
-
-    resources :item_categories
-    resources :pages
-    resources :nodes
-    resources :replies
-    resources :topics
-    resources :activity_records
-    resources :orders
-    resources :vips
-    resources :notes
-    resources :donates
-  end
 end

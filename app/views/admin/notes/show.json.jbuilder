@@ -1,1 +1,0 @@
-json.extract! @note, :title, :content, :recommendation, :price, :created_at, :updated_at

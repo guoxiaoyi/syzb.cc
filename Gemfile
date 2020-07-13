@@ -68,19 +68,4 @@ group :development, :test do
 end
 # gem 'gitlab'
 
-gem 'simple_form'
-gem "nested_form"
-
-# gem 'wizcms_article' ,  :git => 'git@git.wityun.com:wizcloud/wizcms_article.git'
-gem 'wizcms_article', :path => './vendor/bundle/wizcms_article'
-gem 'wizcms_link', :path => './vendor/bundle/wizcms_link'
-
-
-gem 'rails_kindeditor'
-
-gem 'ransack'
-gem "select2-rails"
-
-# gem 'axlsx_rails'
-
 gem 'httparty'

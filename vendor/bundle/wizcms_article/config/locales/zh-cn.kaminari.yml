@@ -1,8 +1,0 @@
-zh-cn:
-  views:
-    pagination:
-      first: 最前页
-      previous: 上一页
-      next: 下一页
-      last: 最后页
-      truncate: ...

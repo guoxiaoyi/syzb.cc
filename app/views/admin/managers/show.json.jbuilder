@@ -1,1 +1,0 @@
-json.extract! @manager, :name, :email, :passowrd_digest, :supper, :disabled, :created_at, :updated_at
