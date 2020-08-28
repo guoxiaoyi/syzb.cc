@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'contact' => 'contact#index'
+
   get 'api/get_price1'
 
   get 'api/get_switch'
 
   root 'home#index'
 
-  get 'home/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
