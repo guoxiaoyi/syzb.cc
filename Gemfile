@@ -33,7 +33,7 @@ gem 'enum_help'
 # Use unicorn as the app server
 # gem 'unicorn'
 
-gem 'carrierwave', '~> 0.11.0'
+gem 'carrierwave', '~> 1.3.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
